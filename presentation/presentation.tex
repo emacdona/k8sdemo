@@ -2,7 +2,10 @@
 
 \usepackage[utf8]{inputenc}
 
-\title{Introduction to Kubernetes}
+\usetheme{Warsaw}
+\usecolortheme{beaver}
+
+\title[Kubernetes]{Introduction to Kubernetes}
 \author{Ed MacDonald}
 \institute{Solution Street}
 \date{June 2020}
@@ -11,7 +14,77 @@
 \frame{\titlepage}
 
 \begin{frame}
-\frametitle{Sample frame title}
-This is a text in the first frame. This is a text in the first frame. This is a text in the first frame. How long until it updates in the preview?
+\frametitle{What is Kubernetes?}
+A Declarative Container Orchestration Framework
 \end{frame}
+
+\begin{frame}
+\frametitle{Declarative}
+Most Kubernetes API calls involve either:
+\begin{itemize}
+    \item You telling Kubernetes what you want the state of a given set of objects to converge to, or
+    \item You asking Kubernetes what the current state of a given set of objects currently is
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Container}
+The fundamental building blocks of an application deployed on Kubernetes are Containers.
+\end{frame}
+
+\begin{frame}
+\frametitle{Orchestration}
+Once you declare to Kubernetes what you want the state of a cluster to be, Kubernetes works to make it so, by doing things like:
+\begin{itemize}
+    \item Ensuring the desired number of containers are running by starting new ones when existing ones crash.
+    \item Load balancing traffic between running containers based on you declaring your wish for it to do so.
+    \item Starting/Stopping Pods during times of heavy/light resource utilization.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Kubernetes API}
+\begin{itemize}
+    \item Think of the Kubernetes API as a way to send and receive Kubernetes objects to and from the Kubernetes Control Plane.
+    \item Objects are represented as structured documents. We'll use Yaml, but I bet with some work you could use JSON or even XML.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{I Lied. Lets talk about Pods.}
+I said Containers were the fundamental building blocks. Technically, Pods are. What's a Pod?
+\begin{itemize}
+    \item A Pod is a group of one or more containers that work closely together on a specific task.
+    \item Containers in a Pod can share the same volume mounts.
+    \item Some Containers in a Pod can be Init Containers. They run before other pods start and are used to perform startup work. The can communicate with other pods through the aforementioned shared volumes.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{ReplicaSets}
+\begin{itemize}    
+    \item ReplicaSets allow you to declare to Kubernetes how many of a given type of Pod you wish to have running.
+    \item Pods in a ReplicaSet are treated as if they are Stateless.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Summary of Tools Used}
+\begin{itemize}
+    \item This is a text in the first frame. This is a text in the first frame. This is a text in the first frame. How long until it updates in the preview?
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+More frames
+\end{frame}
+
+\begin{frame}
+\frametitle{Tools used}
+Minikube (https://kubernetes.io/docs/tasks/tools/install-minikube/)
+(will also have you install a hypervisor (eg: VirtualBox) and kubectl)
+Helm (https://helm.sh/docs/intro/install/)
+\end{frame}
+
 \end{document}
