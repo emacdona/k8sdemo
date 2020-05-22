@@ -1,6 +1,9 @@
 \documentclass{beamer}
 
 \usepackage[utf8]{inputenc}
+\usepackage{minted}
+
+
 
 \usetheme{Warsaw}
 \usecolortheme{beaver}
@@ -113,7 +116,7 @@ Helm (https://helm.sh/docs/intro/install/)
 
 \begin{frame}[fragile]
 \frametitle{An Algorithm For Finding Prime Numbers.}
-\begin{verbatim}
+\begin{minted}{cpp}
 int main (void)
 {
     std::vector<bool> is_prime (100, true);
@@ -125,10 +128,50 @@ int main (void)
         }
     return 0;
 }
-\end{verbatim}
-\begin{uncoverenv}<2>
-    Note the use of \verb|std::|.
-\end{uncoverenv}
+\end{minted}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Yaml?}
+\begin{minted}[fontsize=\fontsize{3}{4}]{yaml}
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: default
+  name: demo-demo-6f95ccf6d5-pdnmc
+  labels:
+    app.kubernetes.io/instance: demo
+    app.kubernetes.io/name: demo
+spec:
+  containers:
+  - image: nginx:1.16.0
+    name: demo
+    livenessProbe:
+      httpGet:
+        path: /
+        port: http
+        scheme: HTTP
+    ports:
+    - containerPort: 80
+      name: http
+      protocol: TCP
+    readinessProbe:
+      httpGet:
+        path: /
+        port: http
+        scheme: HTTP
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: demo-demo-token-dj7lr
+      readOnly: true
+  volumes:
+  - name: demo-demo-token-dj7lr
+    secret:
+      defaultMode: 420
+      secretName: demo-demo-token-dj7lr
+
+\end{minted}
 \end{frame}
 
 \end{document}
