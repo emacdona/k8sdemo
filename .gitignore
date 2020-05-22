@@ -4,6 +4,8 @@
 *.out
 *.pdf
 *.snm
+*.vrb
 *.synctex.gz
 *.toc
 .*~
+.idea/

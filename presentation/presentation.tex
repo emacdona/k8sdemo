@@ -87,4 +87,48 @@ Minikube (https://kubernetes.io/docs/tasks/tools/install-minikube/)
 Helm (https://helm.sh/docs/intro/install/)
 \end{frame}
 
+\begin{frame}
+\frametitle{What’s Still To Do?}
+\begin{block}{Answered Questions}
+    How many primes are there?
+\end{block}
+\begin{block}{Open Questions}
+    Is every even number the sum of two primes?
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{What’s Still To Do?}
+\begin{columns}
+    \column{.25\textwidth}
+    \begin{block}{Answered Questions}
+        How many primes are there?
+    \end{block}
+    \column{.75\textwidth}
+    \begin{block}{Open Questions}
+        Is every even number the sum of two primes?
+    \end{block}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{An Algorithm For Finding Prime Numbers.}
+\begin{verbatim}
+int main (void)
+{
+    std::vector<bool> is_prime (100, true);
+    for (int i = 2; i < 100; i++)
+        if (is_prime[i])
+        {
+            std::cout << i << " ";
+            for (int j = i; j < 100; is_prime [j] = false, j+=i);
+        }
+    return 0;
+}
+\end{verbatim}
+\begin{uncoverenv}<2>
+    Note the use of \verb|std::|.
+\end{uncoverenv}
+\end{frame}
+
 \end{document}
