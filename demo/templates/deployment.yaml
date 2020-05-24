@@ -9,7 +9,7 @@ metadata:
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app.kubernetes.io/name: demo
@@ -27,11 +27,11 @@ spec:
         - name: demo
           securityContext:
             {}
-          image: "nginx:1.16.0"
+          image: "kubedemo/simpleapp"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 8080
               protocol: TCP
           livenessProbe:
             httpGet:
