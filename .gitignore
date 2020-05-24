@@ -10,3 +10,5 @@
 .*~
 .idea/
 _minted-presentation/
+*.zip
+.*.un~

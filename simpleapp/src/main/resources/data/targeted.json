@@ -1,0 +1,1407 @@
+[
+  {
+    "audience": "technology",
+    "name": "r/gadgets",
+    "description": "Discussion and news regarding everything from vintage gadgetry to the latest and greatest in gadgets.\n\nKeywords: technology, gadgets, tech, news, products"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/gaming",
+    "description": "A subreddit for (almost) anything related to games - video games, board games, card games, etc. (but not sports)."
+  },
+  {
+    "audience": "technology",
+    "name": "r/torrents",
+    "description": "But you wouldn't download a new Director of Talent\n"
+  },
+  {
+    "audience": "programming",
+    "name": "r/Python",
+    "description": "news about the dynamic, interpreted, interactive, object-oriented, extensible programming language Python"
+  },
+  {
+    "audience": "technology",
+    "name": "r/geek",
+    "description": "Geeky things"
+  },
+  {
+    "audience": "technology",
+    "name": "r/hardware",
+    "description": "/r/hardware is a technology subreddit for computer hardware news, reviews and discussion. "
+  },
+  {
+    "audience": "technology",
+    "name": "r/linux",
+    "description": "All things Linux and GNU/Linux -- this is neither a community exclusively about the kernel Linux, nor is exclusively about the GNU operating system."
+  },
+  {
+    "audience": "programming",
+    "name": "r/ruby",
+    "description": ""
+  },
+  {
+    "audience": "technology",
+    "name": "r/iphone",
+    "description": "reddit's little corner for iPhone lovers (and some people who just mildy enjoy it...)"
+  },
+  {
+    "audience": "programming",
+    "name": "r/lisp",
+    "description": "A subreddit for the Lisp family of programming languages."
+  },
+  {
+    "audience": "programming",
+    "name": "r/scala",
+    "description": ""
+  },
+  {
+    "audience": "programming",
+    "name": "r/PHP",
+    "description": "Ask questions about frameworks, try your hand at php golf and strike gold or simply show off your latest work."
+  },
+  {
+    "audience": "technology",
+    "name": "r/windows",
+    "description": "Windows is a personal computer operating system released by Microsoft as part of the Windows NT family of operating systems."
+  },
+  {
+    "audience": "technology",
+    "name": "r/google",
+    "description": "For news and announcements from and about Google"
+  },
+  {
+    "audience": "technology",
+    "name": "r/tech",
+    "description": "The goal of /r/tech is to provide a space dedicated to the intelligent discussion of innovations and changes to technology in our ever changing world.\n\n\nWe focus on high quality news articles about technology and informative and thought provoking self posts."
+  },
+  {
+    "audience": "technology",
+    "name": "r/mac",
+    "description": "reddit's Mac community."
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/food",
+    "description": "Cooking, restaurants, recipes, food network, foodies, talk about it here!"
+  },
+  {
+    "audience": "programming",
+    "name": "r/perl",
+    "description": "The Perl Programming Language, including both Perl 5 and Perl 6."
+  },
+  {
+    "audience": "pets",
+    "name": "r/cute",
+    "description": "A place for cute stuffs."
+  },
+  {
+    "audience": "programming",
+    "name": "r/ocaml",
+    "description": ""
+  },
+  {
+    "audience": "technology",
+    "name": "r/emulation",
+    "description": "Emulation News and Discussion."
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/Cooking",
+    "description": "/r/Cooking is a place for the cooks of reddit and those who want to learn how to cook. Post anything related to cooking here, within reason."
+  },
+  {
+    "audience": "programming",
+    "name": "r/shell",
+    "description": "News, articles, tips and tools covering shell scripting and command-line interfaces of all flavors."
+  },
+  {
+    "audience": "programming",
+    "name": "r/erlang",
+    "description": ""
+  },
+  {
+    "audience": "scifi",
+    "name": "r/Stargate",
+    "description": "All things dedicated to the Stargate 1994 movie, SG-1, Atlantis, Universe, Origins, games and everything else about the franchise."
+  },
+  {
+    "audience": "programming",
+    "name": "r/scheme",
+    "description": ""
+  },
+  {
+    "audience": "programming",
+    "name": "r/java",
+    "description": "News, Technical discussions, research papers and assorted things of interest related to the Java programming language\n\nNO programming help, NO learning Java related questions!"
+  },
+  {
+    "audience": "programming",
+    "name": "r/csharp",
+    "description": ""
+  },
+  {
+    "audience": "scifi",
+    "name": "r/doctorwho",
+    "description": "Reddit's Doctor Who Fan Community - News, Discussion, Artwork and Fan Creations!"
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/beer",
+    "description": "A subreddit to discuss your favorite beers and breweries, and share beer related articles. Quality content encouraged."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/PS3",
+    "description": "##The PlayStation 3 Subreddit (PS3, PlayStation3, Sony PlayStation 3)\n\n****\n\n#[The Official FAQ](http://www.reddit.com/r/ps3/faq)\n\nYour place for:\n\n* News\n* Reviews\n* Questions\n* Opinions\n* Discussion\n* Wallpapers\n* Help\n* And anything else *not piracy related.*\n\nFrom hardcore gamers to converts and newbies, all are welcome in /r/PS3.\n\n****\n"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/nintendo",
+    "description": "A subreddit for talking about Nintendo news and games. Discussion questions, news, review/previews, opinion pieces and informative videos about games new and old are welcome!\n\nOur sister-subreddit /r/casualnintendohttp://casualnintendo.reddit.com is for Nintendo-themed entertainment including fan work, memes, let's plays and more. We recommend browsing both subreddits at the same time @ http://reddit.com/r/nintendo+casualnintendo"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/WebGames",
+    "description": "Want to kill time? Come and play a web game! No sign-ups, no fuss, no muss, no spam."
+  },
+  {
+    "audience": "programming",
+    "name": "r/C_Programming",
+    "description": "The subreddit for the C programming language"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/chess",
+    "description": "Everything to do with chess. Game analysis, current events, and more!"
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/wine",
+    "description": "A place to share all the latest happenings in the world of wine... the beverage, not the software."
+  },
+  {
+    "audience": "technology",
+    "name": "r/hacking",
+    "description": "A subreddit dedicated to hacking and hackers.\n\nWhat we are about: constructive collaboration and learning about exploits, industry standards, grey and white hat hacking, new hardware and software hacking technology, sharing ideas and suggestions for small business and personal security."
+  },
+  {
+    "audience": "programming",
+    "name": "r/prolog",
+    "description": "Content and discussion about Prolog, logic programming, and related matters."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/Games",
+    "description": "The goal of /r/Games is to provide a place for informative and interesting gaming content and discussions.\n\nSubmissions should be for the purpose of informing or initiating a discussion, not just with the goal of entertaining viewers. Memes, comics, funny screenshots, arts-and-crafts, etc. will be removed."
+  },
+  {
+    "audience": "programming",
+    "name": "r/d_language",
+    "description": ""
+  },
+  {
+    "audience": "programming",
+    "name": "r/groovy",
+    "description": ""
+  },
+  {
+    "audience": "pets",
+    "name": "r/parrots",
+    "description": "This is a community for the discussion of parrots.  Feel free to talk about parrots in the wild, owning parrots, the pet trade, rescuing parrots, purchasing parrots, avian veterinarians, and anything pertaining to these beautiful creatures."
+  },
+  {
+    "audience": "cycling",
+    "name": "r/cycling",
+    "description": "bikeit!\n\nbike\nbikes\nbicycle\nbicycles\nbicycling\ncycling\n"
+  },
+  {
+    "audience": "programming",
+    "name": "r/asm",
+    "description": "*Throwing in keywords for search:* assembly, asm, x86, arm, powerpc, thumb, sparc, mips, risc, cisc, 8086, 186, 286, i386, i486, p5, p6, netburst, core, nehalem, sandy bridge, haswell, broadwell, larrabee, bonnell, moore, noyce, fairchild, motorola, amd, k5, k6, k7, k8, k10, turion, fusion, bobcat, bulldozer, cortex, intel, marvell, xmos, masm, opcode, uop, cache, lookup, hyper threading, multi threading, ooo, out-of-order, out of order, branch, prediction, predication, scalar"
+  },
+  {
+    "audience": "scifi",
+    "name": "r/steampunk",
+    "description": ""
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/Coffee",
+    "description": "/r/ Coffee is a place to discuss any and all things coffee."
+  },
+  {
+    "audience": "programming",
+    "name": "r/cpp",
+    "description": "Discussions, articles and news about the C++ programming language or programming in C++."
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/alcohol",
+    "description": "A place for the HEALTHY and SAFE enjoyment of the Sauce of Life."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/smashbros",
+    "description": "Welcome to Reddit's finest Super Smash Bros. community!"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/wow",
+    "description": "World of Warcraft on Reddit! "
+  },
+  {
+    "audience": "technology",
+    "name": "r/techsupport",
+    "description": "Stumped on a Tech problem?  Ask the tech support reddit, and try to help others with their problems as well.\n\nBe sure to check out the live chat, too!"
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/Outdoors",
+    "description": "Outdoor recreation: keeping humans fit, fed and happy for thousands of years. The sun on your face, the wind in your hair: all this and more could be yours to experience... if you ever get off reddit and go outside for once! /r/Outdoors is for *all* outdoor experiences, not limited to any specific interest. Caving, mountain climbing, cycling, bushcraft, gardening, going for a stroll -- it's all on topic here! "
+  },
+  {
+    "audience": "programming",
+    "name": "r/lua",
+    "description": "News and discussion for the Lua programming language."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/flashlight",
+    "description": "We discuss quality flashlights and lights of all types including:  \nEDC, keychain, headlamps, lanterns, weapon, work, and many others. \n\nReviews are also welcomed here."
+  },
+  {
+    "audience": "cycling",
+    "name": "r/bmx",
+    "description": "For discussion of Bicycle Motocross &amp; showcasing grassroots beginners all the way up to the latest &amp; most groundbreaking media BMX has to offer. It's easy, you do."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/camping",
+    "description": "A subreddit for campers concerned more about the act of camping and less concerned about hiking long distances or light gear."
+  },
+  {
+    "audience": "running",
+    "name": "r/Parkour",
+    "description": "*Parkour* is a discipline with a worldwide community focusing on training to overcome any obstacle within one's path by adapting one's movements and body to the environment. In this subreddit, we discuss training, discipline, and community of parkour, as well as share inspiration in pictures and videos. Freerunning and related disciplines welcome!"
+  },
+  {
+    "audience": "technology",
+    "name": "r/networking",
+    "description": "###Enterprise Networking\n\nRouters, switches and firewalls. Network blogs, news and network management articles. Cisco, Juniper, Brocade and more all welcome."
+  },
+  {
+    "audience": "programming",
+    "name": "r/Clojure",
+    "description": "Clojure is a dynamic programming language / Lisp that targets the Java Virtual Machine. "
+  },
+  {
+    "audience": "programming",
+    "name": "r/fsharp",
+    "description": ""
+  },
+  {
+    "audience": "scifi",
+    "name": "r/Supernatural",
+    "description": "Subreddit dedicated to the TV show Supernatural on the CW Network, starring Jensen Ackles, Jared Padalecki, and Misha Collins"
+  },
+  {
+    "audience": "technology",
+    "name": "r/Android",
+    "description": "Android news, reviews, tips, and discussions about rooting, tutorials, and apps. Generic discussion about phones/tablets is allowed, but technical-support and carrier-related issues should be asked in their respective subreddits!"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/MMORPG",
+    "description": "Massively multiplayer online role-playing game (MMORPG) is a genre of role-playing video games in which a very large number of players interact with one another within a virtual game world. We discuss them here!"
+  },
+  {
+    "audience": "programming",
+    "name": "r/ReverseEngineering",
+    "description": "A moderated community dedicated to all things reverse engineering. "
+  },
+  {
+    "audience": "technology",
+    "name": "r/Piracy",
+    "description": "A community dedicated to the discussion of digital piracy."
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/DrinkingGames",
+    "description": "Discuss and create all the Drinking Games."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/Bushcraft",
+    "description": "Bushcraft and Wilderness Survival, Traditional Skills and Techniques."
+  },
+  {
+    "audience": "pets",
+    "name": "r/RATS",
+    "description": "A subreddit for all things pet rats!"
+  },
+  {
+    "audience": "technology",
+    "name": "r/sysadmin",
+    "description": "A reddit dedicated to the profession of Computer System Administration."
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/winemaking",
+    "description": ""
+  },
+  {
+    "audience": "technology",
+    "name": "r/xbox",
+    "description": "Topics related to all versions of the Xbox video game consoles, Games, Online Services, Software, Controllers, etc."
+  },
+  {
+    "audience": "pets",
+    "name": "r/foxes",
+    "description": "The fox - one of the most amazing animals there is! Submit pictures, questions, or anything related to foxes. For the species in the genus *Vulpes* or any other 'true fox' species."
+  },
+  {
+    "audience": "programming",
+    "name": "r/SQL",
+    "description": "The goal of /r/SQL is to provide a place for interesting and informative SQL content and discussions."
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/cocktails",
+    "description": ""
+  },
+  {
+    "audience": "programming",
+    "name": "r/Julia",
+    "description": "Julia is a high-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments."
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/Scotch",
+    "description": "a subreddit for Scotch enthusiasts of all walks of life and of all levels of knowledge on anything Scotch Whisky related.\n"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/letsplay",
+    "description": "A subreddit dedicated to creating Let's Plays, either liked by redditors or made by redditors!\n\nLet's Play: One or more people that record themselves playing video games through screenshots or captured video (Mostly the latter).\n\nIf you go into this just to fit yourself in with a certain demographic, you'll be throwing yourself in with mediocrity."
+  },
+  {
+    "audience": "pets",
+    "name": "r/kitty",
+    "description": "                   /\\             /\\\n                  |`\\\\_,--=\"=--,_//`|  \n                  \\ .\"  :'. .':  \". /\n                 ==)  _ :  '  : _  (==\n                   |&gt;/O\\   _   /O\\&lt;|\n                   | \\-\"~` _ `~\"-/ |\n                  &gt;|`===. \\_/ .===`|&lt;\n            .-\"-.   \\==='  |  '===/   .-\"-.\n     .-----{'. '`}---\\,  .-'-.  ,/---{.'. '}-----.\n     |     `\"---\"`     `~-===-~`     `\"---\"`     |\n    Say Kitty. Only Kitty. Or I'll call the pawlice.\n"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/Steam",
+    "description": "A subreddit for members of the Steam Community."
+  },
+  {
+    "audience": "technology",
+    "name": "r/Unity3D",
+    "description": "News, Help, Resources, and Conversation. A User Showcase of the Unity Game Engine."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/runescape",
+    "description": "A subreddit dedicated to the MMORPG RuneScape."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/FIFA",
+    "description": "The front page of EA Sports FIFA Series."
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/ramen",
+    "description": ""
+  },
+  {
+    "audience": "pets",
+    "name": "r/pigs",
+    "description": "This is a subreddit for anyone who loves pigs or has pet pigs."
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/grilledcheese",
+    "description": "Grilled cheese sandwiches. Pictures and discussion of Cheesy Grilledness."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/adrenaline",
+    "description": ""
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/whiskey",
+    "description": "Whiskeys of the world. Discussion, reviews, articles, photos. Anything goes, including bourbon, scotch, rye, wheat, Canadian, Irish, white dogs, and everything in between. \n\nPlease consult the guides before asking for a recommendation."
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/vodka",
+    "description": ""
+  },
+  {
+    "audience": "technology",
+    "name": "r/androiddev",
+    "description": "News for Android developers with the who, what, where when and how of the Android community. Probably mostly the how.\n\nHere, you'll find:\n\n- News for Android developers\n- Thoughtful, informative articles\n- Insightful talks and presentations\n- Useful libraries\n- Handy tools\n- Open source applications for studying"
+  },
+  {
+    "audience": "pets",
+    "name": "r/birdpics",
+    "description": "**It is like bird watching, only on Reddit.**"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/linux_gaming",
+    "description": "A subreddit for gaming on the GNU/Linux operating system."
+  },
+  {
+    "audience": "technology",
+    "name": "r/TOR",
+    "description": "News and discussion about the Tor anonymity software. New to Tor? Please read the Tor FAQ!"
+  },
+  {
+    "audience": "scifi",
+    "name": "r/TrueBlood",
+    "description": ""
+  },
+  {
+    "audience": "technology",
+    "name": "r/MachineLearning",
+    "description": ""
+  },
+  {
+    "audience": "technology",
+    "name": "r/onions",
+    "description": "The Best Parts of the Anonymous Internet | Tor Onion Routing Hidden Services | .onions"
+  },
+  {
+    "audience": "pets",
+    "name": "r/catpictures",
+    "description": "Submit pictures of your cats, be it big or small!"
+  },
+  {
+    "audience": "scifi",
+    "name": "r/FanFiction",
+    "description": "For discussion and sharing of your favorite FanFiction."
+  },
+  {
+    "audience": "programming",
+    "name": "r/fortran",
+    "description": ""
+  },
+  {
+    "audience": "pets",
+    "name": "r/sloths",
+    "description": "Look, a sloth!\nSloth pictures, videos and other sloth content."
+  },
+  {
+    "audience": "running",
+    "name": "r/barefoot",
+    "description": "Barefoot/unshod running, walking, and lifestyle."
+  },
+  {
+    "audience": "technology",
+    "name": "r/windowsphone",
+    "description": "This little reddit hub is dedicated to Windows phone stuff + everything else related to it."
+  },
+  {
+    "audience": "programming",
+    "name": "r/ObjectiveC",
+    "description": "Your news for everything ObjectiveC related."
+  },
+  {
+    "audience": "cycling",
+    "name": "r/cyclocross",
+    "description": "For all things related to cyclocross - bikes, races, culture, mud, madness. The lot. "
+  },
+  {
+    "audience": "scifi",
+    "name": "r/SciFiScroll",
+    "description": "sci-fi, scifi, science fiction, fantasy, horror, movies, television, tv, Star Trek, Babylon 5, X-Files, Star Wars, The Strain, The Walking Dead, Expanse"
+  },
+  {
+    "audience": "programming",
+    "name": "r/rstats",
+    "description": ""
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/hiking",
+    "description": "The hikers' subreddit."
+  },
+  {
+    "audience": "programming",
+    "name": "r/coding",
+    "description": ""
+  },
+  {
+    "audience": "programming",
+    "name": "r/visualbasic",
+    "description": "A place to discuss, ask questions and share ideas regarding the Visual Basic programming languages."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/Slackline",
+    "description": ""
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/Kayaking",
+    "description": "All things paddling related!"
+  },
+  {
+    "audience": "pets",
+    "name": "r/redpandas",
+    "description": "The place for all things red panda!\n"
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/firewater",
+    "description": "Share techniques, equipment, still designs, recipes, materials sources, and anything related to beverage distillation."
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/FoodPorn",
+    "description": "Simple, attractive, and visual. Nothing suggestive or inappropriate, this is a safe for work subreddit."
+  },
+  {
+    "audience": "scifi",
+    "name": "r/WoT",
+    "description": "Subreddit for the Wheel of Time fantasy series by Robert Jordan and Brandon Sanderson."
+  },
+  {
+    "audience": "technology",
+    "name": "r/androidapps",
+    "description": "A subreddit dedicated to Android apps."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/leagueoflegends",
+    "description": "This is a subreddit devoted to League of Legends."
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/rum",
+    "description": ""
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/adventures",
+    "description": "All about your adventures. Planning, discussing, and organizing future adventures, and sharing past ones. Base jumping, diving, urban exploration, ghost-hunting, caving, climbing, hiking, wild camping, bushcraft, backpacking, kayaking, anecdotes about dealings with wild animals, authorities, accidents...anything and everything! Share your adventure with us!"
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/liquor",
+    "description": "A sub dedicated to the open discussion of alcohol in its many forms. "
+  },
+  {
+    "audience": "programming",
+    "name": "r/gpgpu",
+    "description": ""
+  },
+  {
+    "audience": "gaming",
+    "name": "r/ffxiv",
+    "description": "A community for fans of Square Enix's popular MMORPG \"Final Fantasy XIV: A Realm Reborn\", also known as FFXIV or FF14. Current expansions include Heavensward and Stormblood."
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/tequila",
+    "description": "**[Review Archive](https://docs.google.com/document/d/1P9bumUqCw1FwMLp-0vQWN_j34St9rYW8LFE-ZP_gdxo/edit)**  *Updated 12/2015*"
+  },
+  {
+    "audience": "pets",
+    "name": "r/Rabbits",
+    "description": "/r/rabbits is an open community where users can learn, share cute pictures, or ask questions about rabbits. All fluffy bunny lovers are welcome! Please note we are a *house rabbit* subreddit."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/alpinism",
+    "description": ""
+  },
+  {
+    "audience": "programming",
+    "name": "r/Racket",
+    "description": "A community for the [Racket](http://www.racket-lang.org) programming language: a modern Lisp for general-purpose programming. Flexible and comes with batteries-included."
+  },
+  {
+    "audience": "technology",
+    "name": "r/trackers",
+    "description": "A subreddit for discussing public &amp; private trackers."
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/cider",
+    "description": "Cider, the fermented alcoholic beverage made from fruit juice, most commonly and traditionally apple juice, but also the juice of peaches, pears, or other fruit. "
+  },
+  {
+    "audience": "technology",
+    "name": "r/nvidia",
+    "description": "A place for everything NVIDIA, come talk about news, drivers, rumours, GPUs, the industry, show-off your build and more."
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/CraftBeer",
+    "description": "A place for discussion and geekery concerning craft beer. A home for people who are passionate about beer and spreading the word."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/hammock",
+    "description": "A subreddit dedicated to the band hammock."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/caving",
+    "description": "Caving tips, trip reports, gear reviews, SRT, speleology, etc."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/whitewater",
+    "description": "Welcome to r/whitewater! \n\nThis subreddit is a place to discuss anything and everything relating to whitewater. "
+  },
+  {
+    "audience": "running",
+    "name": "r/BarefootRunning",
+    "description": "A community of barefoot and minimalist runners."
+  },
+  {
+    "audience": "pets",
+    "name": "r/guineapigs",
+    "description": "For fans and \"slaves\" of guinea pigs (aka, \"Cavies\") encouraging the proper techniques in raising and caring for guinea pigs."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/PS4",
+    "description": "The largest PlayStation 4 community on the internet.  Your hub for everything related to PS4 including games, news, reviews, discussion, questions, videos, and screenshots.\n"
+  },
+  {
+    "audience": "technology",
+    "name": "r/AndroidQuestions",
+    "description": "The place to get help for any problems you have related to your Android device and the Android ecosystem."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/3DS",
+    "description": "The place to discuss all stuff related to the Nintendo 3DS™ family!"
+  },
+  {
+    "audience": "technology",
+    "name": "r/Amd",
+    "description": "A subreddit dedicated to Advanced Micro Devices and their products. This includes:\n\nCPUs - AMD Ryzen, ThreadRipper, Epyc and of course the FX &amp; Athlon lines as well. \n\nGPUs - Radeon Technology Group, RX \"Polaris\", RX Vega, Radeon Pro, Crimson Drivers, FreeSync, benchmarks and more!"
+  },
+  {
+    "audience": "running",
+    "name": "r/trackandfield",
+    "description": ""
+  },
+  {
+    "audience": "scifi",
+    "name": "r/printSF",
+    "description": "**A place to discuss published SF**—novels, short stories, comics, images, and more. Not sure if a book is SF? Then post it! Science Fiction, Fantasy, Alt. History, Postmodern Lit., and more are all welcome here. **The key is that it be speculative, not that it fit some arbitrary genre guidelines**. Any sort of link or text post is welcome as long as it is about printed / text / static SF material."
+  },
+  {
+    "audience": "technology",
+    "name": "r/Rainmeter",
+    "description": "Windows Desktop Customization Tool"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/Twitch",
+    "description": "/r/Twitch is an unofficial place for discussions surrounding the streaming website Twitch.tv. If you want to provide feedback, ask a question or show some quality content, this is the place for you!"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/AndroidGaming",
+    "description": "This subreddit is dedicated to everything related to gaming on Android."
+  },
+  {
+    "audience": "technology",
+    "name": "r/Bitcoin",
+    "description": "A community dedicated to Bitcoin, the currency of the Internet. Bitcoin is a distributed, worldwide, decentralized digital money. Bitcoins are issued and managed without any central authority whatsoever: there is no government, company, or bank in charge of Bitcoin. You might be interested in Bitcoin if you like cryptography, distributed peer-to-peer systems, or economics. A large percentage of Bitcoin enthusiasts are libertarians, though people of all political philosophies are welcome."
+  },
+  {
+    "audience": "cycling",
+    "name": "r/Velo",
+    "description": ""
+  },
+  {
+    "audience": "gaming",
+    "name": "r/DotA2",
+    "description": "Dota 2"
+  },
+  {
+    "audience": "scifi",
+    "name": "r/whowouldwin",
+    "description": "If you love to imagine the planet-exploding battles of the fictional gods who will never be, taking pointless knowledge gathered from a life spent reading and gaming and swinging it like a gladiator's sword in discussions on reddit... then welcome home, my friend. You are indeed where you belong. Come join our discussions, post your own battles and kick some ass!"
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/eatsandwiches",
+    "description": ""
+  },
+  {
+    "audience": "scifi",
+    "name": "r/dresdenfiles",
+    "description": "Reddit's Home for the Dresden Files book series by Jim Butcher.\n\nFeel free to discuss the books, television series, comic books, RPG, and other works by Jim Butcher (such as Codex Alera and Cinder Spires, et al.)."
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/slowcooking",
+    "description": "r/Slowcooking is a food-related subreddit for sharing ideas, recipes or pictures in which a \"slow cooker\" was used in the preparation of meals.\n\nMany people think a slow cooker is named a \"crock-pot,\" however this is a trademarked name of just one manufacturer.\n\nSlow cooking is an ideal method for cooking less expensive portions of meat to make them more tender and tasty than by other forms of cookery.\n\nVegetarian and vegan dishes can also be made via slow cooking.\n\n- crockpot, slowcooker, crock"
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/Hammocks",
+    "description": "**WELCOME TO THE HAMMOCK DISTRICT!**\n\nHammocks are a great lightweight alternative for ultralight campers and hikers. Also, they're *really* comfortable.\n\n[**New to hammocks? Read this.**](http://www.reddit.com/r/Hammocks/comments/1a7zz8/onestop_intro_to_hammocks_post/)"
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/Ultralight",
+    "description": "Tips, tricks, gear reviews and advice for ultralight wilderness backpacking. Our diverse community is connected through the shared desire to reduce the weight of our packs and asking ourselves, \"do I really need that?\""
+  },
+  {
+    "audience": "gaming",
+    "name": "r/gamecollecting",
+    "description": "This is the definitive Reddit source for video game collectors or those who would like to start collecting interactive entertainment. It's a place to share ideas, tips, tricks or secrets as well as show off collections. Most importantly it's a place for game enthusiasts and collectors to keep video game history alive.  \n  \nSo come and join one of the largest internet forums for video game collecting!"
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/Breadit",
+    "description": "Breadit is a community for anything related to making homemade bread!"
+  },
+  {
+    "audience": "programming",
+    "name": "r/coffeescript",
+    "description": ""
+  },
+  {
+    "audience": "cycling",
+    "name": "r/BikeShop",
+    "description": ""
+  },
+  {
+    "audience": "cycling",
+    "name": "r/Bikeporn",
+    "description": "A subreddit for the worlds most beautiful, eye-catching bikes. Road, Mountain, Track, Commuter, Fixed, Cyclocross or BMX, all are welcome."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/GearTrade",
+    "description": "/r/GearTrade is a subreddit for redditors to trade their outdoor gear. Generally, this includes things related to hiking, camping, backpacking, skiing, hunting, and other \"backcountry\" uses. However, it is totally acceptable to post any type of \"gear\" you wish to trade, so long as it is somewhat relevant to the community.\n\n**/r/GearTrade is currently undergoing heavy customization, check back soon for new and exciting features!**"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/CODZombies",
+    "description": "/r/CODZombies is a home for the Call of Duty Zombies community and a hub for the discussion and sharing of content relevant to the games.\n\nCall of Duty Zombies is an alternate gamemode in the first-person shooter video games developed by Treyarch, Infinity Ward, Sledgehammer, and published by Activision. This community covers all aspects and editions of Zombies throughout each studio."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/canyoneering",
+    "description": "/r/canyoneering is devoted to those who love to explore canyons. "
+  },
+  {
+    "audience": "programming",
+    "name": "r/Rlanguage",
+    "description": "We are interested in implementing R programming language for statistics and data science.\n"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/gamernews",
+    "description": "News about video games"
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/myog",
+    "description": "Tips, tricks and How-To's for making your own outdoor gear. Tents, tarps, hammocks, stoves, packs and anything else you can think of."
+  },
+  {
+    "audience": "scifi",
+    "name": "r/TheVampireDiaries",
+    "description": ""
+  },
+  {
+    "audience": "scifi",
+    "name": "r/buffy",
+    "description": "Welcome, fellow Buffy fans! This community is dedicated to Joss Whedon's brain-child, Buffy the Vampire Slayer. If you haven't watched through the entirety of both \"Buffy\" and \"Angel,\" there will most likely be a lot of spoilers. Read at your own risk!\n\nFor as long as there have been vampires, there has been the Slayer. One girl in all the world, a Chosen One..."
+  },
+  {
+    "audience": "cycling",
+    "name": "r/bicycletouring",
+    "description": "Bicycle touring is about taking trips via bicycle. Whether you're going out for the weekend or cycling across continents, bicycletouring is a community of individuals who share this passion."
+  },
+  {
+    "audience": "programming",
+    "name": "r/AskProgramming",
+    "description": "A subreddit for all your programming questions.\n"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/pathofexile",
+    "description": "A subreddit dedicated to the indie game Path of Exile made by Grinding Gear Games."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/speedrun",
+    "description": ""
+  },
+  {
+    "audience": "gaming",
+    "name": "r/truegaming",
+    "description": "/r/truegaming is a subreddit dedicated to meaningful, insightful, and high-quality discussion on all topics gaming."
+  },
+  {
+    "audience": "cycling",
+    "name": "r/BicyclingCirclejerk",
+    "description": ""
+  },
+  {
+    "audience": "technology",
+    "name": "r/tmobile",
+    "description": "Welcome to the subreddit of the best wireless carrier in the industry! T-Mobile is the third largest wireless carrier in the U.S.  offering affordable plans, the fastest 4G LTE in America, no contract, and no overages.. This is the place to discuss everything magenta!"
+  },
+  {
+    "audience": "technology",
+    "name": "r/Dell",
+    "description": "The unofficial subreddit for Dell Technologies"
+  },
+  {
+    "audience": "cycling",
+    "name": "r/ebikes",
+    "description": "Careful, power is addicting. "
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/budgetfood",
+    "description": "Food on a Budget"
+  },
+  {
+    "audience": "cycling",
+    "name": "r/bikewrench",
+    "description": ""
+  },
+  {
+    "audience": "gaming",
+    "name": "r/wiiu",
+    "description": "Reddit's source for news, pictures, reviews, videos, community insight, &amp; anything related to Nintendo's 8th-generation console, the Wii U."
+  },
+  {
+    "audience": "scifi",
+    "name": "r/AskScienceFiction",
+    "description": "It's like Ask Science, but for all universes other than our own. Or as **fanlore.org** calls it [Watsonian point of view](http://fanlore.org/wiki/Watsonian_vs._Doylist)"
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/bartenders",
+    "description": ""
+  },
+  {
+    "audience": "scifi",
+    "name": "r/KingkillerChronicle",
+    "description": ""
+  },
+  {
+    "audience": "programming",
+    "name": "r/Kotlin",
+    "description": "Discussion about Kotlin, statically typed programming language for the JVM, Android and the browser."
+  },
+  {
+    "audience": "scifi",
+    "name": "r/Stormlight_Archive",
+    "description": "A community to discuss the fantasy series *The Stormlight Archive* by Brandon Sanderson, along with other Cosmere-related works."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/GlobalOffensive",
+    "description": "/r/GlobalOffensive is a home for the Counter-Strike: Global Offensive community and a hub for the discussion and sharing of content relevant to CS:GO. \n\nCounter-Strike: Global Offensive is a game created by Valve Corporation and released on August 21st, 2012 as a successor to previous games in the series dating back to 1999. The latest installment to the Counter-Strike franchise maintains a healthy, ever-intensifying competitive scene alongside a growing casual playerbase."
+  },
+  {
+    "audience": "programming",
+    "name": "r/dartlang",
+    "description": "This subreddit is a place for all things related to the Dart programming language and its tools."
+  },
+  {
+    "audience": "pets",
+    "name": "r/awwgifs",
+    "description": "##GIFs that make you go AWW! Like puppies, bunnies, babies, and so on..."
+  },
+  {
+    "audience": "technology",
+    "name": "r/raspberry_pi",
+    "description": "A subreddit for discussing the Raspberry Pi ARM computer and all things related to it."
+  },
+  {
+    "audience": "pets",
+    "name": "r/Pomeranians",
+    "description": ""
+  },
+  {
+    "audience": "gaming",
+    "name": "r/Rainbow6",
+    "description": "Welcome to the Rainbow 6 subreddit, a community for R6 fans to discuss Rainbow Six Siege and past favorites."
+  },
+  {
+    "audience": "running",
+    "name": "r/AdvancedRunning",
+    "description": ""
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/TalesFromRetail",
+    "description": "A place to exchange stories about your bosses, employees, or those interesting customers you see daily.\n\n* Remember that customer who yelled at you over coupons?\n\n* Do I really have to wear this ridiculous polo shirt?\n\n* The things you do after customers leave\n\nCome, put your name tag on, and let's get the stress of work off of our chest.\n"
+  },
+  {
+    "audience": "scifi",
+    "name": "r/fantasywriters",
+    "description": "This subreddit is dedicated to those of us who are writing in the fantasy genre.  Anything related to creating your own works of fantasy is welcome."
+  },
+  {
+    "audience": "pets",
+    "name": "r/AnimalGIFs",
+    "description": "GIFs... of animals!"
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/canoeing",
+    "description": ""
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/AskCulinary",
+    "description": "/r/AskCulinary provides expert guidance for your specific cooking problems to help people of all skill levels become better cooks, to increase understanding of cooking, and to share valuable culinary knowledge."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/searchandrescue",
+    "description": ""
+  },
+  {
+    "audience": "cycling",
+    "name": "r/bikecommuting",
+    "description": "A community of bicycle commuters.  Offering support, help and guidance to new commuters and advice and helpful tools for those who have been commuting for awhile.  Break free from the tedious traffic and enjoy the fresh air!"
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/Mountaineering",
+    "description": ""
+  },
+  {
+    "audience": "programming",
+    "name": "r/dailyprogrammer",
+    "description": "**Welcome to r/DailyProgrammer!** \n\nFirst time visitors of Daily Programmer please [Read the Wiki] (http://www.reddit.com/r/dailyprogrammer/wiki/index) to learn everything about this subreddit.\n\n3 Programming Challenges a week!\n\n"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/Kappa",
+    "description": "/r/Kappa **\"eSports is not a part of the FGC\"**\n"
+  },
+  {
+    "audience": "technology",
+    "name": "r/techsupportgore",
+    "description": "You will cringe to the brink of passing out after a few minutes looking at this subreddit."
+  },
+  {
+    "audience": "cycling",
+    "name": "r/Strava",
+    "description": "Discussion of, about, and around the Strava website and community.\n\nReddit represents a wide, diverse, and (generally) intelligent community. Let's pool our experience, knowledge and a ideas to help improve something we like and appreciate: Strava!\n\n(message me with further ideas. I'd like to grow this little subreddit into something useful, but targeted)"
+  },
+  {
+    "audience": "running",
+    "name": "r/runningmusic",
+    "description": "/r/running, Enjoy your favorite Running Music and Discover New Music to Run to!"
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/CampingGear",
+    "description": "A helpful community that aims to help users make informed decisions about camping gear including sleeping systems, clothing, cooksets, and packs.... and to show off our stuff\n\n---\n"
+  },
+  {
+    "audience": "technology",
+    "name": "r/pebble",
+    "description": "Pebble is an e-paper smartwatch that launched in 2013 and was followed up in 2015."
+  },
+  {
+    "audience": "technology",
+    "name": "r/Surface",
+    "description": "A subreddit for Microsoft Surface. The most productive devices on the planet."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/Overwatch",
+    "description": "Subreddit for all things Overwatch™, the team-based shooter from Blizzard Entertainment."
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/foodhacks",
+    "description": "Food hacks is a place to share quick and simple tips on making food that has more flavor, more nutritional value, or both!\n"
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/DIY_eJuice",
+    "description": "Mix some damn juice.  Read the sidebar.  Blah blah blah."
+  },
+  {
+    "audience": "technology",
+    "name": "r/Windows10",
+    "description": "This community is dedicated to Windows 10 which is a personal computer operating system released by Microsoft as part of the Windows NT family of operating systems."
+  },
+  {
+    "audience": "technology",
+    "name": "r/homelab",
+    "description": "Welcome to your friendly /r/homelab, where techies and sysadmin from everywhere are welcome to share their labs, projects, builds, etc."
+  },
+  {
+    "audience": "running",
+    "name": "r/Sprinting",
+    "description": ""
+  },
+  {
+    "audience": "technology",
+    "name": "r/MechanicalKeyboards",
+    "description": "Keyboard lovers Clicking and Clacking in a content rich, friendly place. The goal of this subreddit is to provide daily links to interesting mechanical keyboard content.\n"
+  },
+  {
+    "audience": "pets",
+    "name": "r/hardcoreaww",
+    "description": "#####HardcoreAww is for CUTE &amp; DANGEROUS animals that would KILL you if they had the chance!\n\nWe value all life on the planet and agree that humans have been stripping away the natural habitats of the amazing beasts that we have demonized for our own expansion purposes, we want to highlight the importance of protecting them for the future generations. Some killers: alligators, bears, cougars, crocodiles, elephants, leopards, lions, hyenas, hippos, rhinos, sharks, tigers, wolves."
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/FoodHaikus",
+    "description": "Have you ever loved food so much that you wanted to write a poem about it? This subreddit encourages those who have experienced this inspirational level of love for food to transfer those feelings into a haiku! \n\nNo rules regarding the haiku itself, just keep it clean!"
+  },
+  {
+    "audience": "technology",
+    "name": "r/oculus",
+    "description": "**The Oculus subreddit, a place for Oculus fans to discuss VR.**"
+  },
+  {
+    "audience": "cycling",
+    "name": "r/fatbike",
+    "description": "All things fat bike.  Photos, events, videos, stories..."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/ParkRangers",
+    "description": "A place for those employed in or curious about conservation agencies, natural and cultural, to discuss interpretation, education, enforcement or anything related to the management of protected areas or resources. "
+  },
+  {
+    "audience": "pets",
+    "name": "r/Delightfullychubby",
+    "description": "All things cute, adorable, and chubby. We mostly feature animals, but all delightfully chubby content is welcome! This is including, but not limited to: pics, images, memes, animations, gifs, videos, and artwork. Help us grow our collection!\n\n\n**No NSFW**"
+  },
+  {
+    "audience": "programming",
+    "name": "r/elixir",
+    "description": "Elixir is a dynamic, functional language designed for building scalable and maintainable applications.\n\nElixir leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems, while also being successfully used in web development and the embedded software domain."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/GamePhysics",
+    "description": "Gifs and videos of game physics and glitches"
+  },
+  {
+    "audience": "technology",
+    "name": "r/nexus6",
+    "description": "/r/Nexus6, For all your Nexus 6 needs, just keep it classy."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/DestinyTheGame",
+    "description": "Welcome! This sub is for discussing Bungie's newest 2 games, Destiny 2 and Destiny, a \"shared world\" action FPS. \n\nPlease read the sidebar rules, and search for your question before posting."
+  },
+  {
+    "audience": "pets",
+    "name": "r/dogswearinghats",
+    "description": "The worlds #1 destination for dogs wearing hats."
+  },
+  {
+    "audience": "pets",
+    "name": "r/awwnverts",
+    "description": "The subreddit for cute pictures of bugs, lobsters, squid, and other non-Vertebrata.\n\nBecause they're adorable too.\n\n"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/hearthstone",
+    "description": "For fans of Blizzard Entertainment's digital card game, Hearthstone"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/blackdesertonline",
+    "description": "The Subreddit for the MMORPG Black Desert Online. \n"
+  },
+  {
+    "audience": "technology",
+    "name": "r/iOSthemes",
+    "description": "Brought to you by /r/jailbreak, /r/iOSthemes is a subreddit for sharing and discussing themes for jailbroken iOS devices."
+  },
+  {
+    "audience": "technology",
+    "name": "r/AppleWatch",
+    "description": "For all things Apple Watch. Pictures, discussion, rumours, news, watchOS, hardware, and more about the company out of Cupertino."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/2007scape",
+    "description": "The community for Old School RuneScape discussion on reddit. Join us for game discussions, weekly events and skilling competitions!\n\nOSRS is the official legacy version of RS, the largest free-to-play MMORPG."
+  },
+  {
+    "audience": "scifi",
+    "name": "r/DaystromInstitute",
+    "description": "A subreddit for in-depth discussion about *Star Trek*."
+  },
+  {
+    "audience": "programming",
+    "name": "r/elm",
+    "description": "Friendly online community for Elm users. Beginners welcome!"
+  },
+  {
+    "audience": "technology",
+    "name": "r/BitcoinMarkets",
+    "description": "Sharing of ideas, tips, and strategies for increasing your Bitcoin trading profits"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/xboxone",
+    "description": "Everything and anything related to the Xbox One. News, reviews, previews, rumors, screenshots, videos and more!"
+  },
+  {
+    "audience": "pets",
+    "name": "r/AnimalsBeingDerps",
+    "description": "Pictures, gifs and videos of animals acting like complete idiots."
+  },
+  {
+    "audience": "running",
+    "name": "r/firstmarathon",
+    "description": "An \"anything goes\" place to help each other, learn, freak out, laugh, and make our first journey to the full marathon a little less scary/hard. "
+  },
+  {
+    "audience": "pets",
+    "name": "r/raccoongifs",
+    "description": "A subreddit dedicated to gifs of raccoons. Go figure."
+  },
+  {
+    "audience": "pets",
+    "name": "r/AnimalsFailing",
+    "description": "This is a subreddit where you can post gifs of animals completely failing at things."
+  },
+  {
+    "audience": "pets",
+    "name": "r/animalssmiling",
+    "description": "A subreddit for smiling animals."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/snowshoeing",
+    "description": "A subreddit dedicated to snowshoeing"
+  },
+  {
+    "audience": "pets",
+    "name": "r/tinyanimalsonfingers",
+    "description": "Tiny animals on fingers! "
+  },
+  {
+    "audience": "gaming",
+    "name": "r/incremental_games",
+    "description": "This subreddit is for lovers of games that feature an incremental mechanism, such as unlocking progressively more powerful upgrades, or discovering new ways to play the game. This genre is growing at a break-neck pace, be part of the revolution!"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/heroesofthestorm",
+    "description": "Reddit community for Blizzard's MOBA game - Heroes of the Storm"
+  },
+  {
+    "audience": "programming",
+    "name": "r/swift",
+    "description": "Swift - a modern programming language for iOS, OS X, watchOS, and tvOS apps."
+  },
+  {
+    "audience": "technology",
+    "name": "r/3DSdeals",
+    "description": "This subreddit is about finding and sharing the best deals for Nintendo's 3DS family of consoles, games, and accessories!"
+  },
+  {
+    "audience": "pets",
+    "name": "r/GirlsCuddlingPuppies",
+    "description": "Girls cuddling, petting and playing with puppies. Puppy dogs of all ages are welcome as long as they're cute :3"
+  },
+  {
+    "audience": "technology",
+    "name": "r/microsoftsoftwareswap",
+    "description": "This is the central marketplace for all microsoft software, whether you are selling digital downloads keys or installation discs with keys.  There are many sites with tough restrictions on this type of sales so we are here to make it easier for everyone to buy and sell software.\n\n* **YOU CAN ONLY RENEW YOUR SHOP ONCE EVERY 2 DAYS** \n"
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/WildernessBackpacking",
+    "description": "A subreddit dedicated to backpacking in the wild places on earth - where people are few, cell signal is nil, and Mother Nature still reigns. \nBackpacking defined as: Multi-day trips into the wild, unpopulated, areas of the world.  "
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/canoecamping",
+    "description": "The Subreddit for those who love to Paddle and Camp by the water. Its basically backpacking with a canoe!"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/RocketLeague",
+    "description": "Rocket League: The Game - everything related to Rocket League!"
+  },
+  {
+    "audience": "cycling",
+    "name": "r/bikemessengers",
+    "description": "Back in business. "
+  },
+  {
+    "audience": "pets",
+    "name": "r/MildlyStartledCats",
+    "description": "Cats that are mildly startled."
+  },
+  {
+    "audience": "technology",
+    "name": "r/PopCornTime",
+    "description": "Subreddit for the most popular Torrent streaming program Popcorn Time \nOfficial website : https://popcorntime.sh"
+  },
+  {
+    "audience": "pets",
+    "name": "r/babyelephantgifs",
+    "description": "Guaranteed to make you smile."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/TrailGuides",
+    "description": "This is a subreddit meant to provide a place to post specific hikes/routes and to discuss them."
+  },
+  {
+    "audience": "gaming",
+    "name": "r/LivestreamFails",
+    "description": "#The subreddit you are looking for is /r/LivestreamFail\n\n\n**This subreddit is no longer active. All new livestream fail posts can be found at /r/livestreamfail**\n\n\n\n"
+  },
+  {
+    "audience": "pets",
+    "name": "r/kittengifs",
+    "description": "The best place for all your kitten watching needs. "
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/hammockcamping",
+    "description": "/r/hammockcamping is a subreddit devoted to the **discussion** of hammock camping.  This subreddit values interesting discussion, not \"quick pic\" posts.  Share how you used your hammock setup on a recent trip.  Ask questions about hammock gear.  Give a gear or trail review.  Share your knowledge and experience."
+  },
+  {
+    "audience": "pets",
+    "name": "r/brushybrushy",
+    "description": "Images, .gifs and videos of animals enjoying being brushed"
+  },
+  {
+    "audience": "beerspirits",
+    "name": "r/GifRecipes",
+    "description": "Recipes in an easy to follow gif format."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/BackpackingDogs",
+    "description": "This is a place for backpackers, hikers, and campers alike to share their experiences with their pups out in the wild!"
+  },
+  {
+    "audience": "pets",
+    "name": "r/PuppySmiles",
+    "description": "A great collection of puppies smiling to brighten your day!"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/Competitiveoverwatch",
+    "description": "A place for in-depth discussions of Competitive Overwatch™ (the team-based shooter from Blizzard Entertainment). Find detailed discussion of meta, esports and events as well as guides, advice, and tips that go beyond the basics."
+  },
+  {
+    "audience": "pets",
+    "name": "r/batty",
+    "description": "Batty for bats!"
+  },
+  {
+    "audience": "pets",
+    "name": "r/BeforeNAfterAdoption",
+    "description": "Welcome to r/BeforeNAfterAdoption! This is a place to share the amazing difference a loving family can make on an abandoned or mistreated animal. All pets welcome!"
+  },
+  {
+    "audience": "pets",
+    "name": "r/LazyCats",
+    "description": "Videos, pictures, and .gifs of adorably lazy felines of all shapes and sizes.\n\n**This subreddit is temporarily private in support of an on-going protest against the lack of communication between the reddit admins and the reddit moderators**. \n\nWe apologise for the inconvenience, but ultimately we shouldn't have to. The admins should. Shoot /u/wqzu a message if you have any concerns."
+  },
+  {
+    "audience": "pets",
+    "name": "r/GifsofOtters",
+    "description": "**G**ifs **o**f **Otters**\n\n#Go Otters!"
+  },
+  {
+    "audience": "food_drink",
+    "name": "r/MealPrepSunday",
+    "description": "/r/MealPrepSunday is a subreddit dedicated to meal prepping. This is a space to discuss all things about meal prepping. Whether you're looking to prep to save time, money, or to get in those gains, this is the place to ask questions, get answers, and share your meal preps with the world of Reddit! Happy prepping! "
+  },
+  {
+    "audience": "technology",
+    "name": "r/Simulated",
+    "description": "A subreddit for all things computer generated simulations!"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/DBZDokkanBattle",
+    "description": "Everything Dragon Ball Z: Dokkan Battle! This subreddit is for both the Japanese and Global version. Information, guides, tips, news, fan art, questions and everything else Dokkan Battle related.\n"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/gwent",
+    "description": "A subreddit dedicated to Gwent: The Witcher Card Game."
+  },
+  {
+    "audience": "pets",
+    "name": "r/StoppedWorking",
+    "description": "Pictures, Gifs, and Videos of animals (including humans and some exceptions of robots) that have '[Stopped Working](http://i.imgur.com/VNUxLoH.gifv)'. Moderators can remove content if deemed not fitting. Please avoid any gore and abuse as it won't be tolerated. \n"
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/NationalPark",
+    "description": "News, photos and questions about national parks in the US and around the world"
+  },
+  {
+    "audience": "pets",
+    "name": "r/CorgiGifs",
+    "description": "A subreddit dedicated to animated gifs or webms of corgis"
+  },
+  {
+    "audience": "pets",
+    "name": "r/rarepuppers",
+    "description": "this is for rare puppers, sometimes other animols are allowed if they're cute :)\n"
+  },
+  {
+    "audience": "cycling",
+    "name": "r/BikeCammers",
+    "description": "Share your bikecam videos to other cyclists across the world! \nThis subreddit is solely for cyclists (No motor vehicles)\n"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/PUBATTLEGROUNDS",
+    "description": "The largest community for PLAYERUNKNOWN'S BATTLEGROUNDS. A central place for discussion, media, news and more."
+  },
+  {
+    "audience": "running",
+    "name": "r/XXRunning",
+    "description": "A place to talk about running as a woman!"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/RocketLeagueExchange",
+    "description": "Subreddit for all kinds of Rocket League cosmetic item trades."
+  },
+  {
+    "audience": "outdoors",
+    "name": "r/AdventurePhotography",
+    "description": "Welcome to /r/AdventurePhotography where your passion for adventure is shared by visual images!"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/NintendoSwitch",
+    "description": "The central hub for news, updates, info, and discussion about the Nintendo Switch and Nintendo Switch games!"
+  },
+  {
+    "audience": "gaming",
+    "name": "r/FireEmblemHeroes",
+    "description": "A subreddit dedicated to *Fire Emblem Heroes*, Nintendo's 3rd mobile title released on February 2nd, 2017. The game is available worldwide on [iOS](https://itunes.apple.com/us/app/fire-emblem-heroes/id1181774280?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.nintendo.zaba)."
+  }
+]
