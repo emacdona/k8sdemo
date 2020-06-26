@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
-for i in {0..10000}
+for i in {1..10000}
 do
-   curl -s $1/api | jq '.hostname';
-   if ! (($i % 1000)); then
-      echo $i 1>&2;
+   curl -s -w "\n" $1/api >> OP &
+   if ! (($i % 100)); then
+      wait;
    fi;
-done | sort | uniq -c | sort -rn
+   if ! (($i % 1000)); then
+      echo $i;
+   fi;
+done;
+cat OP | jq '.hostname' | sort | uniq -c | sort -rn

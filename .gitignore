@@ -12,3 +12,4 @@
 _minted-presentation/
 *.zip
 .*.un~
+.vagrant/
