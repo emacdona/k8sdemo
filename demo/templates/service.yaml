@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Release.Name }}-demo
+  name: {{ .Release.Name }}-demo-loadbalancer
   labels:
     helm.sh/chart: demo-0.1.0
     app.kubernetes.io/name: demo
@@ -17,4 +17,27 @@ spec:
       name: http
   selector:
     app.kubernetes.io/name: demo
+    app.kubernetes.io/instance: {{ .Release.Name }}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-statefulapp-loadbalancer
+  labels:
+    helm.sh/chart: demo-0.1.0
+    app.kubernetes.io/name: demo
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: statefulapp
     app.kubernetes.io/instance: {{ .Release.Name }}

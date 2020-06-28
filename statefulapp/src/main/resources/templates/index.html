@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Random Subreddit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 15px 5px 15px 15px;
+        }
+    </style>
+</head>
+<body>
+<p><b>DISCLAIMER:</b> You're considering clicking on a <i><b>random</b></i> subreddit. You know the risks.</p>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>
+            <a th:href="${subreddit.link}" th:text="${subreddit.name}"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Hostname</td>
+        <td th:text="${subreddit.hostname}"/>
+    </tr>
+    <tr>
+        <td>Audience</td>
+        <td th:text="${subreddit.audience}"/>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td><pre th:text="${subreddit.description}"/></td>
+    </tr>
+</table>
+</body>
+</html>

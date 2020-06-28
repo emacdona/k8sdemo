@@ -1,0 +1,19 @@
+#!/bin/bash
+set -eo pipefail
+
+echo "Deployments:"
+kubectl get deployments
+
+echo; echo "Statefulsets:"
+kubectl get statefulsets
+
+echo; echo "Pods:"
+kubectl get pods        
+
+echo; echo "Persistent Volumes:"
+kubectl get pv  
+
+echo; echo "Persistent Volume Claims:"
+kubectl get pvc
+
+echo;
