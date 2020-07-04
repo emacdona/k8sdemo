@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: confused-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: confusedapp
+  template:
+    metadata:
+      labels:
+        name: confusedapp
+    spec:
+      containers:
+        - name: confusedapp-container
+          image: "kubedemo/statefulapp"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /healthcheck
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /healthcheck
+              port: http
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: confusedapp-loadbalancer
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    name: confusedapp

@@ -113,6 +113,15 @@ Pods (not containers!) are the fundamental building blocks of a Kubernetes appli
 \end{frame}
 
 \begin{frame}
+\frametitle{The Sample Apps}
+I wrote two apps that do nothing other than suggest a random Subreddit.
+\begin{itemize}
+    \item One is stateless and selects at random from a list of 280 Subreddits.
+    \item The other is stateful and removes each Subreddit from the list upon suggesting it.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
     \frametitle{Stateless Application Pods}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{graphics/02-statelessAppPods.eps}
 \end{frame}
@@ -190,9 +199,16 @@ Pods (not containers!) are the fundamental building blocks of a Kubernetes appli
 
 \begin{frame}
 \frametitle{Other Resources}
+\paragraph{Peripheral tools I used that are worthy of presentations themselves}
 \begin{itemize}
-    \item Bulk Reddit data: \href{http://files.pushshift.io/reddit/subreddits/}{http://files.pushshift.io/reddit/subreddits/}
     \item Beamer: \href{https://ctan.org/pkg/beamer}{https://ctan.org/pkg/beamer}
+    \item Gradle: \href{https://gradle.org}{https://gradle.org}
+    \item Kotlin: \href{https://kotlinlang.org}{https://kotlinlang.org}
+    \item Spring Boot: \href{https://spring.io/projects/spring-boot}{https://spring.io/projects/spring-boot}
+\end{itemize}
+\paragraph{Where I got my Subreddit data}
+\begin{itemize}
+    \item Bulk Reddit data: \href{http://files.pushshift.io/reddit/subreddits}{http://files.pushshift.io/reddit/subreddits}
 \end{itemize}
 \end{frame}
 
