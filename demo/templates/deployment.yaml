@@ -1,33 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}-demo
-  labels:
-    helm.sh/chart: demo-0.1.0
-    app.kubernetes.io/name: demo
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/version: "1.16.0"
-    app.kubernetes.io/managed-by: Helm
+  name: statelessapp-deployment
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
-      app.kubernetes.io/name: demo
-      app.kubernetes.io/instance: {{ .Release.Name }}
+      name: statelessapp
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: demo
-        app.kubernetes.io/instance: {{ .Release.Name }}
+        name: statelessapp
     spec:
-      serviceAccountName: {{ .Release.Name }}-demo
-      securityContext:
-        {}
       containers:
-        - name: demo
-          securityContext:
-            {}
-          image: "kubedemo/simpleapp"
+        - name: statelessapp-container
+          image: "kubedemo/statelessapp"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
@@ -41,5 +28,3 @@ spec:
             httpGet:
               path: /
               port: http
-          resources:
-            {}
