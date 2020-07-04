@@ -165,9 +165,34 @@ Pods (not containers!) are the fundamental building blocks of a Kubernetes appli
 \end{frame}
 
 \begin{frame}
+    \frametitle{Demo}
+    \begin{center}
+        \Huge So, let's see this in action!
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Overview}
+    First, let's talk about the steps we're going to take:
+    \begin{itemize}
+        \item Start our Kubernetes environment (minikube).
+        \item Configure our docker cli to talk to minikube's docker host.
+        \item Build our two sample apps, package them as docker containers, and push the images.
+        \item Run helm to deploy our applications.
+        \item Proxy local ports to connect to our load balancing services.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Demo}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{graphics/08-loadBalancer.eps}
+\end{frame}
+
+\begin{frame}
 \frametitle{Other Resources}
 \begin{itemize}
-    \item http://files.pushshift.io/reddit/subreddits/
+    \item Bulk Reddit data: \href{http://files.pushshift.io/reddit/subreddits/}{http://files.pushshift.io/reddit/subreddits/}
+    \item Beamer: \href{https://ctan.org/pkg/beamer}{https://ctan.org/pkg/beamer}
 \end{itemize}
 \end{frame}
 

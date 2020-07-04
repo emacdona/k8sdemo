@@ -13,3 +13,5 @@ _minted-presentation/
 *.zip
 .*.un~
 .vagrant/
+
+dashboard.out
