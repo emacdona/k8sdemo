@@ -5,25 +5,26 @@
 \usepackage{listings}
 \usepackage{graphicx}
 
-%\usetheme{Warsaw}
 \usetheme{metropolis}
 \usecolortheme{beaver}
+
+\AtBeginEnvironment{frame}{\setcounter{footnote}{0}}
 
 \title[Kubernetes]{Introduction to Kubernetes}
 \author{Ed MacDonald}
 \institute{Solution Street}
-\date{June 2020}
+\date{July 2020}
 
 \begin{document}
 \frame{\titlepage}
 
 \begin{frame}
 \frametitle{What is Kubernetes?}
-A Declarative Container Orchestration Framework
+A Container Orchestration Framework
 \end{frame}
 
 \begin{frame}
-\frametitle{Declarative}
+\frametitle{Kubernetes API}
 Most Kubernetes API calls involve either:
 \begin{itemize}
     \item You telling Kubernetes what you want the state of a given set of objects to converge to, or
@@ -36,27 +37,50 @@ Most Kubernetes API calls involve either:
 Think of the Kubernetes API as a way to:
 \begin{itemize}
     \item Send YAML documents to Kubernetes which specify components you would like to create in your cluster.
-    \item Send REST requests to Kubernetes that specify updates to the desired state you would like components in your cluster to converge to.
-    \item Sent REST requests asking Kubernetes for the current state of components in your cluster.
+    \item Send requests to Kubernetes that specify updates components in your cluster.
+    \item Sent requests asking Kubernetes for the current state of components in your cluster.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{kubectl}
+    \begin{center}
+        \Huge Tools
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{minikube\footnotemark}
+    \begin{itemize}
+        \item Easiest way to install a cluster on your machine.
+        \item For development purposes only!
+    \end{itemize}
+    \footnotetext[1]{https://kubernetes.io/docs/tasks/tools/install-minikube/}
+\end{frame}
+
+\begin{frame}
+\frametitle{kubectl\footnotemark}
 \begin{itemize}
 \item kubectl is a command line tool used to communicate with Kubernetes clusters.
-\item It provides a convenient way to do all the things mentioned on the previous slide.
-\item We will be using it to update components in our cluster and view their state
+\item It provides a convenient way to speak with Kubernetes via its API.
+\item We will be using it to update components in our cluster and view their state.
 \item You \textbf{\textit{can}} use it to create components, but there is a better way to do that...
 \end{itemize}
+\footnotetext[1]{https://kubernetes.io/docs/tasks/tools/install-kubectl/}
 \end{frame}
 
 \begin{frame}
-\frametitle{helm}
+\frametitle{helm\footnotemark}
 \begin{itemize}
     \item helm is a tool for packaging and deploying Kubernetes apps.
     \item For our purposes, just think of as a way to package all the YAML files that create the components that make your app, and then deploy them to a cluster.
 \end{itemize}
+\footnotetext[1]{\href{https://helm.sh/}{https://helm.sh/}}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        \Huge Kubernetes Architecture Overview With Sample Apps
+    \end{center}
 \end{frame}
 
 \begin{frame}
@@ -74,13 +98,7 @@ Think of the Kubernetes API as a way to:
 \end{frame}
 
 \begin{frame}
-\begin{center}
-\Huge Kubernetes Components
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Pods.}
+\frametitle{Pods}
 Pods (not containers!) are the fundamental building blocks of a Kubernetes application
 \begin{itemize}
     \item A Pod is a group of one or more containers that work closely together on a specific task.
@@ -147,19 +165,16 @@ Pods (not containers!) are the fundamental building blocks of a Kubernetes appli
 \end{frame}
 
 \begin{frame}
-\frametitle{Tools used}
-\begin{itemize}
-    \item Minikube (https://kubernetes.io/docs/tasks/tools/install-minikube/)
-(will also have you install a hypervisor (eg: VirtualBox) and kubectl)
-    \item Helm (https://helm.sh/docs/intro/install/)
-\end{itemize}
-\end{frame}
-
-\begin{frame}
 \frametitle{Other Resources}
 \begin{itemize}
     \item http://files.pushshift.io/reddit/subreddits/
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        \Huge Questions?
+    \end{center}
 \end{frame}
 
 %\begin{frame}
