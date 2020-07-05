@@ -27,3 +27,5 @@ all: 00-nodes.eps 01-systemPods.eps 02-statelessAppPods.eps 03-statefulAppPods.e
 08-loadBalancer.eps: diagram.dia
 	dia --show-layers=Nodes,System,Stateless,Deployment,Stateful,StatefulSet,PersistentStorage,HeadlessService,LoadBalancers --filter=eps-pango --export=08-loadBalancer.eps diagram.dia
 
+clean:
+	rm -f *.eps *.pdf

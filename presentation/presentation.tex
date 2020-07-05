@@ -5,6 +5,8 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{xcolor}
+%\usepackage{adjustbox}
+\usepackage{adjustbox}
 
 
 %\usetheme{metropolis}
@@ -241,97 +243,81 @@ Where I got my Subreddit data
     \end{center}
 \end{frame}
 
-%\begin{frame}
-%\frametitle{What’s Still To Do?}
-%\begin{block}{Answered Questions}
-%    How many primes are there?
-%\end{block}
-%\begin{block}{Open Questions}
-%    Is every even number the sum of two primes?
-%\end{block}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{What’s Still To Do?}
-%\begin{columns}
-%    \column{.25\textwidth}
-%    \begin{block}{Answered Questions}
-%        How many primes are there?
-%    \end{block}
-%    \column{.75\textwidth}
-%    \begin{block}{Open Questions}
-%        Is every even number the sum of two primes?
-%    \end{block}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}[fragile]
-%\frametitle{An Algorithm For Finding Prime Numbers.}
-%\begin{minted}{cpp}
-%int main (void)
-%{
-%    std::vector<bool> is_prime (100, true);
-%    for (int i = 2; i < 100; i++)
-%        if (is_prime[i])
-%        {
-%            std::cout << i << " ";
-%            for (int j = i; j < 100; is_prime [j] = false, j+=i);
-%        }
-%    return 0;
-%}
-%\end{minted}
-%\end{frame}
-%
-%\begin{frame}[fragile]
-%\frametitle{Yaml?}
-%\begin{columns}
-%    \column{.25\textwidth}
-%    \begin{block}{Answered Questions}
-%        How many primes are there?
-%    \end{block}
-%    \column{.75\textwidth}
-%    \begin{block}{Open Questions}
-%\begin{minted}[style=friendly,fontsize=\fontsize{3}{4}]{yaml}
-%---
-%apiVersion: v1
-%kind: Pod
-%metadata:
-%  namespace: default
-%  name: demo-demo-6f95ccf6d5-pdnmc
-%  labels:
-%    app.kubernetes.io/instance: demo
-%    app.kubernetes.io/name: demo
-%spec:
-%  containers:
-%  - image: nginx:1.16.0
-%    name: demo
-%    livenessProbe:
-%      httpGet:
-%        path: /
-%        port: http
-%        scheme: HTTP
-%    ports:
-%    - containerPort: 80
-%      name: http
-%      protocol: TCP
-%    readinessProbe:
-%      httpGet:
-%        path: /
-%        port: http
-%        scheme: HTTP
-%    volumeMounts:
-%    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-%      name: demo-demo-token-dj7lr
-%      readOnly: true
-%  volumes:
-%  - name: demo-demo-token-dj7lr
-%    secret:
-%      defaultMode: 420
-%      secretName: demo-demo-token-dj7lr
-%
-%\end{minted}
-%    \end{block}
-%\end{columns}
-%\end{frame}
+\begin{frame}[fragile]
+\frametitle{Yaml?}
+\begin{columns}[t]
+    \column{.45\textwidth}
+    \begin{block}{Headless Service}
+    \begin{minted}[style=friendly,fontsize=\fontsize{3}{4}]{yaml}
+apiVersion: v1
+kind: Service
+metadata:
+  name: statefulapp-statefulset
+  labels:
+    name: statefulapp
+spec:
+  ports:
+    - port: 8080
+      name: http
+  clusterIP: None
+  selector:
+    name: statefulapp
+    \end{minted}
+    \end{block}
 
+    \column{.45\textwidth}
+    \begin{block}{Stateful Set}
+%\maxsizebox{\textwidth}{\textheight}{
+%\begin{adjustbox}{max height=\textheight, margin=0pt}
+    \begin{minted}[style=friendly,fontsize=\fontsize{3}{4}]{yaml}
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: statefulapp
+  labels:
+    name: statefulapp
+spec:
+  replicas: 1
+  serviceName: statefulapp
+  selector:
+    matchLabels:
+      name: statefulapp
+  template:
+    metadata:
+      labels:
+        name: statefulapp
+    spec:
+      containers:
+        - name: statefulapp
+          image: "kubedemo/statefulapp"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          volumeMounts:
+            - name: statefulapp-storage
+              mountPath: /tmp
+          livenessProbe:
+            httpGet:
+              path: /healthcheck
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /healthcheck
+              port: http
+  volumeClaimTemplates:
+    - metadata:
+        name: statefulapp-storage
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 1Gi
+    \end{minted}
+%\end{adjustbox}
+%}
+    \end{block}
+\end{columns}
+\end{frame}
 \end{document}
