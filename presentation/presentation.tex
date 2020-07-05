@@ -34,7 +34,7 @@ A Container Orchestration Framework
 
 \begin{frame}
 \frametitle{Kubernetes API}
-Most Kubernetes API calls involve either:
+The Kubernetes API is how you interact with Kubernetes. Most Kubernetes API calls involve either:
 \begin{itemize}
     \item You telling Kubernetes what you want the state of a given set of objects to converge to, or
     \item You asking Kubernetes what the current state of a given set of objects is
@@ -45,9 +45,9 @@ Most Kubernetes API calls involve either:
 \frametitle{Kubernetes API}
 Think of the Kubernetes API as a way to:
 \begin{itemize}
-    \item Send YAML documents to Kubernetes which specify components you would like to create in your cluster.
-    \item Send requests to Kubernetes that specify updates components in your cluster.
-    \item Sent requests asking Kubernetes for the current state of components in your cluster.
+    \item Send YAML documents to Kubernetes specifying components you would like to create.
+    \item Send requests to Kubernetes to update components.
+    \item Send requests asking Kubernetes for the current state of components.
 \end{itemize}
 \end{frame}
 
@@ -67,11 +67,19 @@ Think of the Kubernetes API as a way to:
 \end{frame}
 
 \begin{frame}
+    \frametitle{docker client\footnotemark}
+    \begin{itemize}
+        \item We need to be able to build and publish our images to minikube's docker server.
+    \end{itemize}
+    \footnotetext[1]{https://www.docker.com/get-started}
+\end{frame}
+
+\begin{frame}
 \frametitle{kubectl\footnotemark}
 \begin{itemize}
-\item kubectl is a command line tool used to communicate with Kubernetes clusters.
-\item It provides a convenient way to speak with Kubernetes via its API.
-\item We will be using it to update components in our cluster and view their state.
+\item Used to communicate with Kubernetes clusters.
+\item Provides a convenient way to speak with Kubernetes via its API.
+\item We'll be using it to update components in our cluster and view their state.
 \item You \textbf{\textit{can}} use it to create components, but there is a better way to do that...
 \end{itemize}
 \footnotetext[1]{https://kubernetes.io/docs/tasks/tools/install-kubectl/}
@@ -80,8 +88,8 @@ Think of the Kubernetes API as a way to:
 \begin{frame}
 \frametitle{helm\footnotemark}
 \begin{itemize}
-    \item helm is a tool for packaging and deploying Kubernetes apps.
-    \item For our purposes, just think of as a way to package all the YAML files that create the components that make your app, and then deploy them to a cluster.
+    \item Tool for packaging and deploying Kubernetes apps.
+    \item Think of as a way to package and deploy all the YAML files that specify components in your app.
 \end{itemize}
 \footnotetext[1]{\href{https://helm.sh/}{https://helm.sh/}}
 \end{frame}
@@ -95,8 +103,8 @@ Think of the Kubernetes API as a way to:
 \begin{frame}
 \frametitle{Kubernetes Nodes}
 \begin{itemize}
-\item Kubernetes Nodes are compute instances (e.g.: virtual machines, bare metal servers) running the Kubernetes software components that allow them to communicate and cooperate with each other to run your application(s)
-\item Kubernetes schedules Pods to run on the nodes that make up the cluster.
+\item The compute instances (virtual machines, bare metal servers) running the Kubernetes software components that make up a Kubernetes cluster.
+\item Kubernetes schedules Pods (which make up your Applications) to run on these nodes.
 \end{itemize}
 \end{frame}
 
@@ -112,7 +120,7 @@ Pods (not containers!) are the fundamental building blocks of a Kubernetes appli
 \begin{itemize}
     \item A Pod is a group of one or more containers that work closely together on a specific task.
     \item Containers in a Pod can access the same volumes.
-    \item Some Containers in a Pod can be Init Containers. They run before other pods start and are used to perform initialization tasks. The can communicate with other pods through the aforementioned shared volumes.
+    \item Some Containers in a Pod can be Init Containers, which run before other pods start and are used to perform initialization tasks.
 \end{itemize}
 \end{frame}
 
@@ -164,7 +172,7 @@ I wrote two apps that do nothing other than suggest a random Subreddit.
 
 \begin{frame}
     \frametitle{Stateful Sets}
-    StatefulSets add features needed by stateful apps, namely:
+    StatefulSets manage Pods that are required to have state, namely:
     \begin{itemize}
         \item Pods in a StatefulSet each have a persistent network identity.
         \item Pods in a StatefulSet each have persistent storage.
@@ -178,7 +186,26 @@ I wrote two apps that do nothing other than suggest a random Subreddit.
 
 \begin{frame}
     \frametitle{Persistent Storage}
+    \begin{itemize}
+        \item StatefulSet pod specifications allow you to create PersistentVolumeClaims.
+        \item PVCs are used to request PersistentVolumes.
+        \item PVs are beyond the scope of this presentation. Let's just say they are ``created on request".
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Persistent Storage}
     \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/06-persistence.eps}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Headless Service}
+    StatefulSets require a Headless Service
+    \begin{itemize}
+        \item A Headless Service is one without an IP address.
+        \item It's used to manage DNS.
+        \item It's what gives Pods in a StatefulSet a persistent network identity.
+    \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -188,6 +215,10 @@ I wrote two apps that do nothing other than suggest a random Subreddit.
 
 \begin{frame}
     \frametitle{Load Balancers}
+    \begin{itemize}
+        \item Load Balancers have a "ClusterIP" and also an External IP.
+        \item They balance requests sent to their IP address to all pods their "selector" targets.
+    \end{itemize}
 \end{frame}
 
 \begin{frame}
