@@ -8,10 +8,14 @@
 *.synctex.gz
 *.toc
 .*~
-.idea/
 _minted-presentation/
 *.zip
 .*.un~
 .vagrant/
 
 dashboard.out
+
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/tasks.xml
+.idea/shelf 
