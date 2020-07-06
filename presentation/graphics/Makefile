@@ -48,4 +48,4 @@ docker-built: Dockerfile
 	touch docker-built
 
 clean:
-	rm -f *.eps *.pdf
+	rm -f *.eps *.pdf .*.un~
