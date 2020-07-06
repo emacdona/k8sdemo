@@ -1,4 +1,4 @@
-all: 00-nodes.eps 01-systemPods.eps 02-statelessAppPods.eps 03-statefulAppPods.eps 04-deployment.eps 05-statefulSet.eps 06-persistence.eps 07-persistentIdentity.eps 08-loadBalancer.eps deploy-00-app.eps deploy-01-appContainerized.eps deploy-02-containerToRepo.eps deploy-03-emptyPods.eps deploy-04-podsWithContainers.eps
+all: 00-nodes.eps 01-systemPods.eps 02-statelessAppPods.eps 03-statefulAppPods.eps 04-deployment.eps 05-statefulSet.eps 06-persistence.eps 07-persistentIdentity.eps 08-loadBalancer.eps deploy-00-app.eps deploy-01-appContainerized.eps deploy-02-containerToRepo.eps deploy-03-emptyPods.eps deploy-04-podsWithContainers.eps simplifiedModel-00.eps
 
 00-nodes.eps: diagram.dia docker-built
 	docker run --rm -i -v ${CURDIR}:/workdir k8spreso/dia --show-layers=Nodes --filter=eps-pango --export=00-nodes.eps diagram.dia
@@ -27,6 +27,9 @@ all: 00-nodes.eps 01-systemPods.eps 02-statelessAppPods.eps 03-statefulAppPods.e
 08-loadBalancer.eps: diagram.dia docker-built
 	docker run --rm -i -v ${CURDIR}:/workdir k8spreso/dia --show-layers=Nodes,System,Stateless,Deployment,Stateful,StatefulSet,PersistentStorage,HeadlessService,LoadBalancers --filter=eps-pango --export=08-loadBalancer.eps diagram.dia
 
+simplifiedModel-00.eps: simplifiedModel.dia docker-built
+	docker run --rm -i -v ${CURDIR}:/workdir k8spreso/dia --show-layers=Nodes,System,Stateless,Deployment,Stateful,StatefulSet,PersistentStorage,HeadlessService,LoadBalancers --filter=eps-pango --export=simplifiedModel-00.eps simplifiedModel.dia
+
 deploy-00-app.eps: deployToKube.dia docker-built
 	docker run --rm -i -v ${CURDIR}:/workdir k8spreso/dia --show-layers=Boundary,App --filter=eps-pango --export=deploy-00-app.eps deployToKube.dia
 
@@ -48,4 +51,4 @@ docker-built: Dockerfile
 	touch docker-built
 
 clean:
-	rm -f *.eps *.pdf .*.un~
+	rm -f *.eps *.pdf .*.un~ docker-built
