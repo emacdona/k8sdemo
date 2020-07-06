@@ -29,7 +29,60 @@
 
 \begin{frame}
 \frametitle{What is Kubernetes?}
-A Container Orchestration Framework
+\begin{itemize}
+    \item{A Container Orchestration Framework.}
+    \item{Very well suited for Applications that scale horizontally (stateless).}
+    \item{But can also accommodate portions of your infrastructure that do not scale horizontally (stateful)!}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{How do you use it?}
+    \begin{itemize}
+        \item{Package your application components as containers.}
+        \item{Run the containers on Kubernetes Pods.}
+        \item{Let Kubernetes manage the Pods for you!}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Why go through the hassle? (It can be a hassle)}
+    \begin{itemize}
+        \item{Kubernetes can increase or decrease the number of Pods according to traffic load.}
+        \item{Kubernetes can increase or decrease the amount of compute resources according to compute load.}
+        \item{Kubernetes can replace unresponsive Pods with new ones.}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        \Huge High Level Deployment Walkthrough
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Deploying An App: Build Your App}
+    \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-00-app.eps}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Deploying An App: Package Your App as a Container}
+    \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-01-appContainerized.eps}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Deploying An App: Push The Container to a Repository}
+    \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-02-containerToRepo.eps}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Deploying An App: Deploy Pods to a Kubernetes Cluster}
+    \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-03-emptyPods.eps}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Deploying An App: Pods Pull Your Container}
+    \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-04-podsWithContainers.eps}
 \end{frame}
 
 \begin{frame}
