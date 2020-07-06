@@ -31,4 +31,4 @@ docker:
 	docker build -t k8spreso/dia .
 
 clean:
-	rm -f *.eps *.pdf
+	rm -f *.eps *.pdf .*.un~
