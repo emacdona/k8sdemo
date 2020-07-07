@@ -6,7 +6,7 @@ The first build will take a while... the Latex image is over 2GB. Once that cont
 
 The `statefulapp` and `simpleapp` directories contain gradlew files... so generating their jar artifacts will be easy. 
 Just be aware that you also need to package them in Docker containers, and publish those docker containers to your Kubernetes cluster's image repo.
-Dockerfiles provided. See stuff in the `demo-script` directory to get an idea of how to packages these apps as Docker containers and push them to minikube's image repo (if you're using minikube).
+Dockerfiles provided. See stuff in the `demo-script` directory to get an idea of how to package these apps as Docker containers and push them to minikube's image repo (if you're using minikube).
 
 The `demo` directory contains a helm chart. So, if you want to install it, you'll need helm installed plus a Kubernetes cluster (try minikube).
 
