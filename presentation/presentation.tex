@@ -183,12 +183,12 @@ If you disagree, let's agree to disagree and move on.
     \begin{itemize}
         \item Pods come and go.
         \begin{itemize}
-            \item They can be replaced if unresponsive.
-            \item They can be deleted on one Node and added on another (moved).
+            \item Replaced if unresponsive.
+            \item Can be deleted on one Node and added on another (moved).
             \item \textbf{You cannot prevent either of these things from happening.}
         \end{itemize}
-        \item By default, when Pods are replaced or moved, the Volumes they get won't be the ones they had before.
-        \item By default, they'll also have new hostnames.
+        \item By default, Volumes don't follow Pods.
+        \item By default, hostnames don't follow Pods.
         \item Not a big deal for stateless Applications.
         \item Definitely needs to be addressed for our stateful Application.
     \end{itemize}
@@ -234,7 +234,7 @@ If you disagree, let's agree to disagree and move on.
     \frametitle{Controllers: Deployments}
     \begin{itemize}
         \item ReplicaSets with more features.
-        \item I'm not going to use those features (I'm honestly not sure what they are).
+        \item I'm not going to use those features.
         \item But I use Deployments because helm produces them for skeleton helm projects.
     \end{itemize}
 \end{frame}
@@ -245,7 +245,8 @@ If you disagree, let's agree to disagree and move on.
     \begin{itemize}
         \item Pods in a StatefulSet each have a persistent network identity.
         \item Pods in a StatefulSet each have persistent storage.
-        \item Persistent here means they stay the same when Pods are replaced or moved. You can stop worrying about our stateful Application now.
+        \item ``Persistent" here means they ``follow" Pods.
+        \item Good news for our stateful Application.
     \end{itemize}
 \end{frame}
 
