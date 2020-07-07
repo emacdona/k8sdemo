@@ -162,14 +162,16 @@ If you disagree, let's agree to disagree and move on.
     \frametitle{The Sample Apps}
     I wrote two Applications that do nothing other than suggest a random Subreddit.
     \begin{itemize}
-        \item One is stateless and selects at random from a list of 280 Subreddits.
+        \item One is stateless:
         \begin{itemize}
+            \item Selects at random from a list of 280 Subreddits.
             \item The list never changes.
             \item It doesn't need to store anything anywhere.
         \end{itemize}
-        \item One is stateful and removes each Subreddit from the list upon suggesting it.
+        \item One is stateful:
         \begin{itemize}
-            \item It removes the selected Subreddit from the list.
+            \item Selects at random from a list of Subreddits.
+            \item \textbf{Removes} the selected Subreddit from the list.
             \item Persists the list.
             \item Uses the updated list to service the next request.
         \end{itemize}
@@ -188,7 +190,7 @@ If you disagree, let's agree to disagree and move on.
         \item By default, when Pods are replaced or moved, the Volumes they get won't be the ones they had before.
         \item By default, they'll also have new hostnames.
         \item Not a big deal for stateless Applications.
-        \item Definitely something that needs to be addressed for our stateful Application, though.
+        \item Definitely needs to be addressed for our stateful Application.
     \end{itemize}
 \end{frame}
 
@@ -196,7 +198,7 @@ If you disagree, let's agree to disagree and move on.
     \frametitle{Tool: docker\footnotemark}
     \begin{itemize}
         \item Our Applications need to be packaged as docker Containers.
-        \item We need to be able to build our Containers and publish them to minikube's docker server.
+        \item We need publish these Containers to minikube's docker server.
     \end{itemize}
     \footnotetext[1]{https://www.docker.com/get-started}
 \end{frame}
@@ -249,11 +251,11 @@ If you disagree, let's agree to disagree and move on.
 
 \begin{frame}
 \frametitle{Tool: kubectl\footnotemark}
+kubectl can:
 \begin{itemize}
-\item We need to be able to communicate with our cluster.
-\item kbuectl can update components in our cluster.
-\item kbuectl can inspect components in our cluster.
-\item kbuectl can create components in our cluster, but we'll use another tool for that...
+\item Update components in our cluster.
+\item Inspect components in our cluster.
+\item Create components in our cluster, but we'll use another tool for that...
 \end{itemize}
 \footnotetext[1]{https://kubernetes.io/docs/tasks/tools/install-kubectl}
 \end{frame}
