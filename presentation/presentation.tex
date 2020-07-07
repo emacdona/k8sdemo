@@ -29,9 +29,9 @@
 \begin{frame}
 \frametitle{A Note on Capitalization}
 \begin{itemize}
-   \item{I agonized over which words to capitalize and which words not to capitalize.}
+   \item{I agonized over which words to capitalize.}
 
-   \item{I wanted to capitalize ``things" that were important concepts in the Kubernetes world:}
+   \item{I wanted to capitalize ``things" that were important concepts in the Kubernetes domain:}
    \begin{itemize}
       \item{Any Kubernetes component: Deployment, Pod, ReplicaSet, StatefulSet, ...}
       \item{Application, Container, Kubernetes, Node, Volume}
@@ -71,10 +71,11 @@
 
 \begin{frame}
     \frametitle{Why go through the hassle? (It can be a hassle)}
+    Kubernetes can manage resources for you by:
     \begin{itemize}
-        \item{Kubernetes can increase or decrease the number of Pods according to traffic load.}
-        \item{Kubernetes can increase or decrease the amount of compute resources according to compute load.}
-        \item{Kubernetes can replace unresponsive Pods with new ones.}
+        \item{Changing the number of running Pods to meet traffic demands.}
+        \item{Adjusting compute resources to meet compute demands.}
+        \item{Replacing unresponsive Pods with new ones.}
     \end{itemize}
 \end{frame}
 
@@ -174,15 +175,6 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Tool: docker\footnotemark}
-    \begin{itemize}
-        \item Our Applications need to be packaged as docker Containers.
-        \item We need to be able to build our Containers and publish them to minikube's docker server.
-    \end{itemize}
-    \footnotetext[1]{https://www.docker.com/get-started}
-\end{frame}
-
-\begin{frame}
     \frametitle{An Aside on Pods}
     \begin{itemize}
         \item Pods come and go.
@@ -196,6 +188,15 @@
         \item Not a big deal for stateless Applications.
         \item Definitely something that needs to be addressed for our stateful Application, though.
     \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Tool: docker\footnotemark}
+    \begin{itemize}
+        \item Our Applications need to be packaged as docker Containers.
+        \item We need to be able to build our Containers and publish them to minikube's docker server.
+    \end{itemize}
+    \footnotetext[1]{https://www.docker.com/get-started}
 \end{frame}
 
 \begin{frame}
