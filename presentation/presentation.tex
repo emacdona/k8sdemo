@@ -27,6 +27,31 @@
 \frame{\titlepage}
 
 \begin{frame}
+\frametitle{A Note on Capitalization}
+\begin{itemize}
+   \item{I agonized over which words to capitalize and which words not to capitalize.}
+
+   \item{I wanted to capitalize ``things" that were important concepts in the Kubernetes world:}
+   \begin{itemize}
+      \item{Any Kubernetes component: Deployment, Pod, ReplicaSet, StatefulSet, ...}
+      \item{Application, Container, Kubernetes, Node, Volume}
+   \end{itemize}
+
+   \item{But some didn't quite make the cut:}
+   \begin{itemize}
+      \item{cluster, component}
+   \end{itemize}
+
+   \item{And I couldn't bring myself to capitalize things I type at the Unix command line:}
+   \begin{itemize}
+      \item{docker, helm, kubectl, minikube}
+   \end{itemize}
+
+   \item{If you disagree, let's agree to disagree and move on.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
 \frametitle{What is Kubernetes?}
 \begin{itemize}
     \item{A Container Orchestration Framework.}
@@ -38,8 +63,8 @@
 \begin{frame}
     \frametitle{How do you use it?}
     \begin{itemize}
-        \item{Package your application components as containers.}
-        \item{Run the containers on Kubernetes Pods.}
+        \item{Package your Application components as Containers.}
+        \item{Run the Containers on Kubernetes Pods.}
         \item{Let Kubernetes manage the Pods for you!}
     \end{itemize}
 \end{frame}
@@ -93,16 +118,16 @@
 \begin{frame}
     \frametitle{Kubernetes Nodes}
     \begin{itemize}
-        \item The (virtual) machines that make up the Kubernetes Cluster.
+        \item The (virtual) machines that make up the Kubernetes cluster.
         \item Kubernetes schedules Pods to run on these Nodes.
-        \item Kubernetes changes the number of Nodes to increase/decrease compute resources.
+        \item Kubernetes can change the number of Nodes to increase/decrease compute resources.
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Tool: minikube\footnotemark}
     \begin{itemize}
-        \item Easiest way to install a (single node) Kubernetes cluster on your machine.
+        \item Easiest way to install a (single Node) Kubernetes cluster on your machine.
         \item For development purposes only!
     \end{itemize}
     \footnotetext[1]{https://kubernetes.io/docs/tasks/tools/install-minikube}
@@ -116,12 +141,12 @@
 
 \begin{frame}
     \frametitle{Pods}
-    Pods (not containers!) are the fundamental building blocks of a Kubernetes application
+    Pods (not Containers!) are the fundamental building blocks of a Kubernetes Application
     \begin{itemize}
-        \item A Pod is a group of one or more containers that work closely together on a specific task.
+        \item A Pod is a group of one or more Containers that work closely together on a specific task.
         \item Pods manage Volumes for their Containers.
         \item Pods specify health check endpoints for their Containers.
-        \item Kubernetes software is deployed as Pods on the Cluster!
+        \item Kubernetes software is deployed as Pods on the cluster!
     \end{itemize}
 \end{frame}
 
@@ -132,7 +157,7 @@
 
 \begin{frame}
     \frametitle{The Sample Apps}
-    I wrote two apps that do nothing other than suggest a random Subreddit.
+    I wrote two Applications that do nothing other than suggest a random Subreddit.
     \begin{itemize}
         \item One is stateless and selects at random from a list of 280 Subreddits.
         \begin{itemize}
@@ -151,7 +176,7 @@
 \begin{frame}
     \frametitle{Tool: docker\footnotemark}
     \begin{itemize}
-        \item Our apps need to be packaged as Docker Containers.
+        \item Our Applications need to be packaged as docker Containers.
         \item We need to be able to build our Containers and publish them to minikube's docker server.
     \end{itemize}
     \footnotetext[1]{https://www.docker.com/get-started}
@@ -166,7 +191,7 @@
             \item They can be deleted on one Node and added on another (moved).
             \item \textbf{You cannot prevent either of these things from happening.}
         \end{itemize}
-        \item By default, when Pods are replaced or moved, the volumes they get won't be the ones they had before.
+        \item By default, when Pods are replaced or moved, the Volumes they get won't be the ones they had before.
         \item By default, they'll also have new hostnames.
         \item Not a big deal for stateless Applications.
         \item Definitely something that needs to be addressed for our stateful Application, though.
@@ -195,7 +220,7 @@
     \frametitle{Controllers: ReplicaSets}
     \begin{itemize}
         \item ReplicaSets allow you to declare to Kubernetes how many of a given type of Pod you wish to have running.
-        \item Pods in a ReplicaSet are treated as if they are Stateless.
+        \item Pods in a ReplicaSet are treated as if they are stateless.
         \item Any Pod is indistinguishable from another from the Application's point of view.
     \end{itemize}
 \end{frame}
@@ -203,26 +228,26 @@
 \begin{frame}
     \frametitle{Controllers: Deployments}
     \begin{itemize}
-        \item Deployments are an even higher level abstraction than Replica Sets.
-        \item They provide "declarative updates to Pods", as well as other features?
+        \item Deployments are an even higher level abstraction than ReplicaSets.
+        \item They provide ``declarative updates to Pods" (as well as other features?)
         \item I use them in my example, but I don't use any features that distinguish them from ReplicaSets.
     \end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Controllers: Stateful Sets}
+    \frametitle{Controllers: StatefulSets}
     StatefulSets manage Pods that are required to have state, namely:
     \begin{itemize}
         \item Pods in a StatefulSet each have a persistent network identity.
         \item Pods in a StatefulSet each have persistent storage.
-        \item Persistent here means they stay the same when Pods are replaced or moved. You can stop worrying about our stateful app now.
+        \item Persistent here means they stay the same when Pods are replaced or moved. You can stop worrying about our stateful Application now.
     \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Tool: kubectl\footnotemark}
 \begin{itemize}
-\item We need to be able to communicate with our Cluster.
+\item We need to be able to communicate with our cluster.
 \item kbuectl can update components in our cluster.
 \item kbuectl can inspect components in our cluster.
 \item kbuectl can create components in our cluster, but we'll use another tool for that...
@@ -233,7 +258,7 @@
 \begin{frame}
 \frametitle{Tool: helm\footnotemark}
 \begin{itemize}
-    \item Tool for packaging and deploying Kubernetes apps.
+    \item Tool for packaging and deploying Kubernetes Applications.
     \item We'll use helm to package and deploy our Kubernetes component specifications.
 \end{itemize}
 \footnotetext[1]{\href{https://helm.sh}{https://helm.sh}}
@@ -252,9 +277,9 @@
 \begin{frame}
     \frametitle{StatefulSet: Persistent Storage}
     \begin{itemize}
-        \item StatefulSet pod specifications allow you to create PersistentVolumeClaims.
+        \item StatefulSet Pod specifications allow you to create PersistentVolumeClaims.
         \item PVCs are used to request PersistentVolumes.
-        \item PersistentVolumes are volumes that survive Pods being moved or replaced.
+        \item PersistentVolumes are Volumes that survive Pods being moved or replaced.
     \end{itemize}
 \end{frame}
 
@@ -281,8 +306,8 @@
 \begin{frame}
     \frametitle{Load Balancers}
     \begin{itemize}
-        \item Load Balancers have a "ClusterIP" and also an External IP.
-        \item They balance requests sent to either IP address to all pods their "selector" targets.
+        \item Load Balancers have a ``ClusterIP" and also an External IP.
+        \item They balance requests sent to either IP address to all Pods their ``selector" targets.
     \end{itemize}
 \end{frame}
 
@@ -304,7 +329,7 @@
     \begin{itemize}
         \item Start our Kubernetes environment (minikube).
         \item Configure our docker cli to talk to minikube's docker host.
-        \item Build our two sample apps, package them as docker containers, and push the images.
+        \item Build our two sample Applications, package them as docker Containers, and push the images.
         \item Run helm to deploy our Kubernetes components.
         \item Proxy local ports to connect to our load balancing services.
     \end{itemize}
