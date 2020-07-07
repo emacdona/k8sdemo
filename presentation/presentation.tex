@@ -28,9 +28,10 @@
 
 \begin{frame}
 \frametitle{A Note on Capitalization}
-\begin{itemize}
-   \item{I agonized over which words to capitalize.}
 
+I agonized over which words to capitalize.
+
+\begin{itemize}
    \item{I wanted to capitalize ``things" that were important concepts in the Kubernetes domain:}
    \begin{itemize}
       \item{Any Kubernetes component: Deployment, Pod, ReplicaSet, StatefulSet, ...}
@@ -46,9 +47,10 @@
    \begin{itemize}
       \item{docker, helm, kubectl, minikube}
    \end{itemize}
-
-   \item{If you disagree, let's agree to disagree and move on.}
 \end{itemize}
+
+If you disagree, let's agree to disagree and move on.
+
 \end{frame}
 
 \begin{frame}
@@ -220,18 +222,18 @@
 \begin{frame}
     \frametitle{Controllers: ReplicaSets}
     \begin{itemize}
-        \item ReplicaSets allow you to declare to Kubernetes how many of a given type of Pod you wish to have running.
-        \item Pods in a ReplicaSet are treated as if they are stateless.
-        \item Any Pod is indistinguishable from another from the Application's point of view.
+        \item State how many Pods you want.
+        \item Pods are treated as if they were stateless.
+        \item From Application's point of view, Pods in a ReplicaSet are indistinguishable.
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Controllers: Deployments}
     \begin{itemize}
-        \item Deployments are an even higher level abstraction than ReplicaSets.
-        \item They provide ``declarative updates to Pods" (as well as other features?)
-        \item I use them in my example, but I don't use any features that distinguish them from ReplicaSets.
+        \item ReplicaSets with more features.
+        \item I'm not going to use those features (I'm honestly not sure what they are).
+        \item But I use Deployments because helm produces them for skeleton helm projects.
     \end{itemize}
 \end{frame}
 
@@ -260,7 +262,7 @@
 \frametitle{Tool: helm\footnotemark}
 \begin{itemize}
     \item Tool for packaging and deploying Kubernetes Applications.
-    \item We'll use helm to package and deploy our Kubernetes component specifications.
+    \item We'll use helm (instead of kubectl) to create our Kubernetes components.
 \end{itemize}
 \footnotetext[1]{\href{https://helm.sh}{https://helm.sh}}
 \end{frame}
@@ -278,7 +280,7 @@
 \begin{frame}
     \frametitle{StatefulSet: Persistent Storage}
     \begin{itemize}
-        \item StatefulSet Pod specifications allow you to create PersistentVolumeClaims.
+        \item StatefulSet Pods can have PersistentVolumeClaims (PVCs).
         \item PVCs are used to request PersistentVolumes.
         \item PersistentVolumes are Volumes that survive Pods being moved or replaced.
     \end{itemize}
@@ -293,9 +295,8 @@
     \frametitle{StatefulSet: Headless Service}
     StatefulSets require a Headless Service
     \begin{itemize}
-        \item A Headless Service is one without an IP address.
         \item It's used by the Kubernetes DNS Pod.
-        \item It's what gives Pods in a StatefulSet a persistent network identity.
+        \item It allows Pods to keep their hostname by keeping track of their IP address (even when it changes).
     \end{itemize}
 \end{frame}
 
@@ -307,8 +308,9 @@
 \begin{frame}
     \frametitle{Load Balancers}
     \begin{itemize}
-        \item Load Balancers have a ``ClusterIP" and also an External IP.
-        \item They balance requests sent to either IP address to all Pods their ``selector" targets.
+        \item Load Balancers have an internal cluster IP address.
+        \item They can also have an external IP address.
+        \item They distribute requests sent to either IP address to all Pods targeted by their ``selector".
     \end{itemize}
 \end{frame}
 
@@ -343,7 +345,7 @@
 
 \begin{frame}
     \begin{center}
-        \Huge Time to go DEEPER?\\
+        \Huge Is there enough time to go deeper?\\
         If so, let's dig into some code.
     \end{center}
 \end{frame}
