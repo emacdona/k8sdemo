@@ -29,8 +29,8 @@
 \begin{frame}
 \frametitle{What is Kubernetes?}
 \begin{itemize}
-    \item{A Container Orchestration Framework.}
-    \item{Very well suited for Applications that scale horizontally (stateless).}
+    \item{A Container Orchestration Framework.}\pause
+    \item{Very well suited for Applications that scale horizontally (stateless).}\pause
     \item{But can also accommodate portions of your infrastructure that do not scale horizontally (stateful). Don't let people tell you otherwise.}
 \end{itemize}
 \end{frame}
@@ -38,18 +38,18 @@
 \begin{frame}
     \frametitle{How do you use it?}
     \begin{itemize}
-        \item{Package your Application components as Containers.}
-        \item{Run the Containers on Kubernetes Pods.}
+        \item{Package your Application components as Containers.}\pause
+        \item{Run the Containers on Kubernetes Pods.}\pause
         \item{Let Kubernetes manage the Pods for you!}
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Why go through the hassle? (It can be a hassle)}
-    Kubernetes can manage resources for you by:
+    Kubernetes can manage resources for you by:\pause
     \begin{itemize}
-        \item{Changing the number of running Pods to meet traffic demands.}
-        \item{Adjusting compute resources to meet compute demands.}
+        \item{Changing the number of running Pods to meet traffic demands.}\pause
+        \item{Adjusting compute resources to meet compute demands.}\pause
         \item{Replacing unresponsive Pods with new ones.}
     \end{itemize}
 \end{frame}
@@ -94,8 +94,8 @@
 \begin{frame}
     \frametitle{Kubernetes Nodes}
     \begin{itemize}
-        \item The (virtual) machines that make up the Kubernetes cluster.
-        \item Kubernetes schedules Pods to run on these Nodes.
+        \item The (virtual) machines that make up the Kubernetes cluster.\pause
+        \item Kubernetes schedules Pods to run on these Nodes.\pause
         \item Kubernetes can change the number of Nodes to increase/decrease compute resources.
     \end{itemize}
 \end{frame}
@@ -117,11 +117,11 @@
 
 \begin{frame}
     \frametitle{Pods}
-    Pods (not Containers!) are the fundamental building blocks of a Kubernetes Application
+    Pods (not Containers!) are the fundamental building blocks of a Kubernetes Application\pause
     \begin{itemize}
-        \item A Pod is a group of one or more Containers that work closely together on a specific task.
-        \item Pods manage Volumes for their Containers.
-        \item Pods specify health check endpoints for their Containers.
+        \item A Pod is a group of one or more Containers that work closely together on a specific task.\pause
+        \item Pods manage Volumes for their Containers.\pause
+        \item Pods specify health check endpoints for their Containers.\pause
         \item Kubernetes software is deployed as Pods on the cluster!
     \end{itemize}
 \end{frame}
@@ -133,19 +133,19 @@
 
 \begin{frame}
     \frametitle{The Sample Apps}
-    I wrote two Applications that do nothing other than suggest a random Subreddit.
+    I wrote two Applications that do nothing other than suggest a random Subreddit.\pause
     \begin{itemize}
         \item One is stateless:
         \begin{itemize}
-            \item Selects at random from a list of 280 Subreddits.
-            \item The list never changes.
-            \item It doesn't need to store anything anywhere.
+            \item Selects at random from a list of 280 Subreddits.\pause
+            \item The list never changes.\pause
+            \item It doesn't need to store anything anywhere.\pause
         \end{itemize}
         \item One is stateful:
         \begin{itemize}
-            \item Selects at random from a list of Subreddits.
-            \item \textbf{Removes} the selected Subreddit from the list.
-            \item Persists the list.
+            \item Selects at random from a list of Subreddits.\pause
+            \item \textbf{Removes} the selected Subreddit from the list.\pause
+            \item Persists the list.\pause
             \item Uses the updated list to service the next request.
         \end{itemize}
     \end{itemize}
@@ -154,15 +154,15 @@
 \begin{frame}
     \frametitle{An Aside on Pods}
     \begin{itemize}
-        \item Pods come and go.
+        \item Pods come and go.\pause
         \begin{itemize}
-            \item Replaced if unresponsive.
-            \item Can be deleted on one Node and added on another (moved).
-            \item \textbf{You cannot prevent either of these things from happening.}
+            \item Replaced if unresponsive.\pause
+            \item Can be deleted on one Node and added on another (moved).\pause
+            \item \textbf{You cannot prevent either of these things from happening.}\pause
         \end{itemize}
-        \item By default, Volumes don't follow Pods.
-        \item By default, hostnames don't follow Pods.
-        \item Not a big deal for stateless Applications.
+        \item By default, Volumes don't follow Pods.\pause
+        \item By default, hostnames don't follow Pods.\pause
+        \item Not a big deal for stateless Applications.\pause
         \item Definitely needs to be addressed for our stateful Application.
     \end{itemize}
 \end{frame}
@@ -197,8 +197,8 @@
 \begin{frame}
     \frametitle{Controllers: ReplicaSets}
     \begin{itemize}
-        \item State how many Pods you want.
-        \item Pods are treated as if they were stateless.
+        \item State how many Pods you want.\pause
+        \item Pods are treated as if they were stateless.\pause
         \item From Application's point of view, Pods in a ReplicaSet are indistinguishable.
     \end{itemize}
 \end{frame}
@@ -206,19 +206,19 @@
 \begin{frame}
     \frametitle{Controllers: Deployments}
     \begin{itemize}
-        \item ReplicaSets with more features.
-        \item I'm not going to use those features.
+        \item ReplicaSets with more features.\pause
+        \item I'm not going to use those features.\pause
         \item But I use Deployments because helm produces them for skeleton helm projects.
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Controllers: StatefulSets}
-    StatefulSets manage Pods that are required to have state, namely:
+    StatefulSets manage Pods that are required to have state, namely:\pause
     \begin{itemize}
-        \item Pods in a StatefulSet each have a persistent network identity.
-        \item Pods in a StatefulSet each have persistent storage.
-        \item ``Persistent" here means they ``follow" Pods.
+        \item Pods in a StatefulSet each have a persistent network identity.\pause
+        \item Pods in a StatefulSet each have persistent storage.\pause
+        \item ``Persistent" here means they ``follow" Pods.\pause
         \item Good news for our stateful Application.
     \end{itemize}
 \end{frame}
@@ -227,8 +227,8 @@
 \frametitle{Tool: kubectl\footnotemark}
 kubectl can:
 \begin{itemize}
-\item Update components in our cluster.
-\item Inspect components in our cluster.
+\item Update components in our cluster.\pause
+\item Inspect components in our cluster.\pause
 \item Create components in our cluster, but we'll use another tool for that...
 \end{itemize}
 \footnotetext[1]{https://kubernetes.io/docs/tasks/tools/install-kubectl}
@@ -256,8 +256,8 @@ kubectl can:
 \begin{frame}
     \frametitle{StatefulSet: Persistent Storage}
     \begin{itemize}
-        \item StatefulSet Pods can have PersistentVolumeClaims (PVCs).
-        \item PVCs are used to request PersistentVolumes.
+        \item StatefulSet Pods can have PersistentVolumeClaims (PVCs).\pause
+        \item PVCs are used to request PersistentVolumes.\pause
         \item PersistentVolumes are Volumes that survive Pods being moved or replaced.
     \end{itemize}
 \end{frame}
@@ -271,7 +271,7 @@ kubectl can:
     \frametitle{StatefulSet: Headless Service}
     StatefulSets require a Headless Service
     \begin{itemize}
-        \item It's used by the Kubernetes DNS Pod.
+        \item It's used by the Kubernetes DNS Pod.\pause
         \item It allows Pods to keep their hostname by keeping track of their IP address (even when it changes).
     \end{itemize}
 \end{frame}
@@ -284,8 +284,8 @@ kubectl can:
 \begin{frame}
     \frametitle{Load Balancers}
     \begin{itemize}
-        \item Load Balancers have an internal cluster IP address.
-        \item They can also have an external IP address.
+        \item Load Balancers have an internal cluster IP address.\pause
+        \item They can also have an external IP address.\pause
         \item They distribute requests sent to either IP address to all Pods targeted by their ``selector".
     \end{itemize}
 \end{frame}
@@ -306,10 +306,10 @@ kubectl can:
     \frametitle{Overview}
     First, let's talk about the steps we're going to take:
     \begin{itemize}
-        \item Start our Kubernetes environment (minikube).
-        \item Configure our docker cli to talk to minikube's docker host.
-        \item Build our two sample Applications, package them as docker Containers, and push the images.
-        \item Run helm to deploy our Kubernetes components.
+        \item Start our Kubernetes environment (minikube).\pause
+        \item Configure our docker cli to talk to minikube's docker host.\pause
+        \item Build our two sample Applications, package them as docker Containers, and push the images.\pause
+        \item Run helm to deploy our Kubernetes components.\pause
         \item Proxy local ports to connect to our load balancing services.
     \end{itemize}
 \end{frame}
