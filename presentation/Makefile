@@ -23,7 +23,7 @@ docker-built: Dockerfile
 	touch docker-built
 
 clean:
-	rm -rf *.aux *.log *.nav *.out *.pdf *.snm *.toc *.vrb *.synctex.gz _minted-presentation logo.png .*.un~ docker-built
+	rm -rf *.aux *.log *.nav *.out *.pdf *.snm *.toc *.vrb *.synctex.gz _minted-presentation logo.png .*.un~ docker-built fragment.tex
 	cd graphics && make clean
 
 FORCE:
