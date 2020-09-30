@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
-minikube dashboard > dashboard.out 2>&1 &
+trap "kill 0" EXIT
+
+minikube dashboard 2>&1 | tee dashboard.out &
+
+wait
