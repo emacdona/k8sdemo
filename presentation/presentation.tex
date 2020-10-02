@@ -13,6 +13,13 @@
 \useinnertheme{circles}
 \definecolor{ssgreen}{HTML}{669B41}
 \usecolortheme[named=ssgreen]{structure}
+
+%Change link colors, except for navigation links...
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+%And, except for footer links
+\addtobeamertemplate{footline}{\hypersetup{allcolors=.}}{}
+
 \setbeamertemplate{navigation symbols}{}
 \setlength{\columnseprule}{0.4pt}
 
@@ -27,30 +34,28 @@
 
 \begin{document}
     \frame{\titlepage}
+
     \begin{frame}
-        \frametitle{Solution Street is Hiring\footnotemark}
-        \begin{minipage}[t]{0.45\textwidth}
-            \vspace{0pt}
-            \begin{block}{About Us}
+        \frametitle{We're Hiring!}
+        \begin{center}
+            \includegraphics[width=3cm]{logo}\\
+            \textbf{We are a software engineering firm founded in 2002 by a software engineer FOR software engineers.}
+            \textbf{We develop lasting relationships with our clients and retain a team of great engineers who love what they do.}\\~\\
+            \textbf{We are always looking for great engineers to join our team!}\\~\\
+            \begin{minipage}{0.45\textwidth}
                 \begin{itemize}
-                    \item{Software engineering firm founded in 2002 \textbf{by} a software engineer \textbf{for} software engineers.}
-                    \item{We develop lasting relationships with our clients and retain a team of great engineers who love what they do.}
-                \end{itemize}
-            \end{block}
-        \end{minipage}%
-        \hfill
-        \begin{minipage}[t]{0.45\textwidth}
-            \vspace{0pt}
-            \begin{block}{Immediate Need for}
-                \begin{itemize}
-                    \item{Senior Java Developers}
-                    \item{Senior Ruby Developers}
+                    \item{Full Stack Developers}
+                    \item{Data Warehouse Engineers}
                     \item{Senior Python Developers}
-                    \item{Senior .NET Developers}
+                    \item{Senior Java Developers}
+                    \item{.NET Developers}
+                    \item{QA Analysts}
                 \end{itemize}
-            \end{block}
-        \end{minipage}
-        \footnotetext[1]{\href{https://www.solutionstreet.com/join.php}{https://www.solutionstreet.com/join.php}}
+            \end{minipage}
+            \\~\\
+            \href{https://solutionstreet.com/join.php}{https://solutionstreet.com/join.php\#open-positions}
+        \end{center}
+
     \end{frame}
 
     \begin{frame}
