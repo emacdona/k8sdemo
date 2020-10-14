@@ -87,6 +87,25 @@
     \end{frame}
 
     \begin{frame}
+        \frametitle{When can you benefit from horizontal scaling?}
+        \begin{itemize}
+            \item{Your app consists only of stateless components.}\pause
+            \begin{itemize}
+                \item{For example: An app that converts uploaded Word documents to PDF documents.}\pause
+            \end{itemize}
+            \item{Your app has stateless and stateful components, but the stateful components are not the bottleneck.}\pause
+            \begin{itemize}
+                \item{Consider SETI@home -- They farmed out intensive computations to a network of PCs, each of which presumably sent back a result that was inserted into their RDBMS.}\pause
+            \end{itemize}
+            \item{You can find a way to scale your stateful components enough that they are no longer the bottleneck.}\pause
+            \begin{itemize}
+                \item{For example: An RDBMS in a read heavy application can scale read-only replicas horizontally and distribute reads (SELECTs) among them.}\pause
+                \item{Or in a write heavy application, perhaps the primary entity can be sharded and distributed among multiple RDBMS instances.}
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
         \begin{center}
             \Huge High Level Deployment Walkthrough
         \end{center}
