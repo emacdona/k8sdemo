@@ -67,6 +67,7 @@
         \frametitle{What is Kubernetes?}
         \begin{itemize}
             \item{A Container Orchestration Framework.}\pause
+            \item{Converges to the state you tell it to.}\pause
             \item{Very well suited for Applications that scale horizontally (stateless).}\pause
             \item{But can also accommodate portions of your infrastructure that do not scale horizontally (stateful). Don't let people tell you otherwise.}
         \end{itemize}
@@ -172,6 +173,11 @@
     \end{frame}
 
     \begin{frame}
+        \frametitle{Manifest Types}
+        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/manifest-types.eps}
+    \end{frame}
+
+    \begin{frame}
         \frametitle{Pods}
         Pods (not Containers!) are the fundamental building blocks of a Kubernetes Application\pause
         \begin{itemize}
@@ -183,32 +189,18 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{System Pods}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/01-systemPods.eps}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{The Sample Apps}
-        I wrote two Applications that do nothing other than suggest a random Subreddit.\pause
+        \frametitle{The Sample App}
+        I wrote an Application that does nothing other than suggest a random Subreddit.\pause
         \begin{itemize}
-            \item One is stateless:
-            \begin{itemize}
-                \item Selects at random from a list of 280 Subreddits.\pause
-                \item The list never changes.\pause
-                \item It doesn't need to store anything anywhere.\pause
-            \end{itemize}
-            \item One is stateful:
-            \begin{itemize}
-                \item Selects at random from a list of Subreddits.\pause
-                \item \textbf{Removes} the selected Subreddit from the list.\pause
-                \item Persists the list.\pause
-                \item Uses the updated list to service the next request.
-            \end{itemize}
+            \item Stateless.
+            \item Selects at random from a list of 280 Subreddits.\pause
+            \item The list never changes.\pause
+            \item It doesn't need to store anything anywhere.\pause
         \end{itemize}
     \end{frame}
 
     \begin{frame}
-        \frametitle{An Aside on Pods}
+        \frametitle{Pods and Stateless Applications}
         \begin{itemize}
             \item Pods come and go.\pause
             \begin{itemize}
@@ -219,7 +211,6 @@
             \item By default, Volumes don't follow Pods.\pause
             \item By default, hostnames don't follow Pods.\pause
             \item Not a big deal for stateless Applications.\pause
-            \item Definitely needs to be addressed for our stateful Application.
         \end{itemize}
     \end{frame}
 
@@ -235,11 +226,6 @@
     \begin{frame}
         \frametitle{Stateless Application Pods}
         \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/02-statelessAppPods.eps}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Stateful Application Pods}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/03-statefulAppPods.eps}
     \end{frame}
 
     \begin{frame}
@@ -269,17 +255,6 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Controllers: StatefulSets}
-        StatefulSets manage Pods that are required to have state, namely:\pause
-        \begin{itemize}
-            \item Pods in a StatefulSet each have a persistent network identity.\pause
-            \item Pods in a StatefulSet each have persistent storage.\pause
-            \item ``Persistent" here means they ``follow" Pods.\pause
-            \item Good news for our stateful Application.
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
         \frametitle{Tool: kubectl\footnotemark}
         kubectl can:
         \begin{itemize}
@@ -305,36 +280,12 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{StatefulSet}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/05-statefulSet.eps}
-    \end{frame}
-
-    \begin{frame}
         \frametitle{StatefulSet: Persistent Storage}
         \begin{itemize}
             \item StatefulSet Pods can have PersistentVolumeClaims (PVCs).\pause
             \item PVCs are used to request PersistentVolumes.\pause
             \item PersistentVolumes are Volumes that survive Pods being moved or replaced.
         \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{StatefulSet: Persistent Storage}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/06-persistence.eps}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{StatefulSet: Headless Service}
-        StatefulSets require a Headless Service
-        \begin{itemize}
-            \item It's used by the Kubernetes DNS Pod.\pause
-            \item It allows Pods to keep their hostname by keeping track of their IP address (even when it changes).
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{StatefulSet: Headless Service}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/07-persistentIdentity.eps}
     \end{frame}
 
     \begin{frame}
@@ -371,7 +322,7 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Demo: Simplified Architecture}
+        \frametitle{Demo Architecture}
         \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/simplifiedModel-00.eps}
     \end{frame}
 
