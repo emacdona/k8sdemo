@@ -95,20 +95,21 @@
     \begin{frame}
         \frametitle{When can you benefit from horizontal scaling?}
         \begin{itemize}
-            \item{Your app consists only of stateless components.}\pause
+            \uncover<2->{\item{Your app consists only of stateless components.}}
             \begin{itemize}
-                \item{For example: An app that converts uploaded Word documents to PDF documents.}\pause
+                \uncover<3->{\item{For example: An app that converts uploaded Word documents to PDF documents.}}
             \end{itemize}
-            \item{Your app has stateless and stateful components, but the stateful components are not the bottleneck.}\pause
+            \uncover<4->{\item{Your app has stateless and stateful components, but the stateful components are not the bottleneck.}}
             \begin{itemize}
-                \item{Consider SETI@home -- They farmed out intensive computations to a network of PCs, each of which presumably sent back a result that was inserted into their RDBMS.}\pause
+                \uncover<5->{\item{Consider SETI@home\footnotemark -- They farmed out intensive computations to a network of PCs, each of which presumably sent back a result that was inserted into their RDBMS.}}
             \end{itemize}
-            \item{You can find a way to scale your stateful components enough that they are no longer the bottleneck.}\pause
+            \uncover<6->{\item{You can find a way to scale your stateful components enough that they are no longer the bottleneck.}}
             \begin{itemize}
-                \item{For example: An RDBMS in a read heavy application can scale read-only replicas horizontally and distribute reads (SELECTs) among them.}\pause
-                \item{Or in a write heavy application, perhaps the primary entity can be sharded and distributed among multiple RDBMS instances.}
+                \uncover<7->{\item{For example: An RDBMS in a read heavy application can scale read-only replicas horizontally and distribute reads (SELECTs) among them.}}
+                \uncover<8->{\item{Or in a write heavy application, perhaps the primary entity can be sharded and distributed among multiple RDBMS instances.}}
             \end{itemize}
         \end{itemize}
+        \footnotetext[1]<5->{\href{https://en.wikipedia.org/wiki/SETI@home}{https://en.wikipedia.org/wiki/SETI@home}}
     \end{frame}
 
     \begin{frame}
@@ -173,7 +174,7 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Manifest Types}
+        \frametitle{Manifest Types - K8s Building Blocks}
         \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/manifest-types.eps}
     \end{frame}
 
@@ -192,10 +193,10 @@
         \frametitle{The Sample App}
         I wrote an Application that does nothing other than suggest a random Subreddit.\pause
         \begin{itemize}
-            \item Stateless.
+            \item Stateless.\pause
             \item Selects at random from a list of 280 Subreddits.\pause
             \item The list never changes.\pause
-            \item It doesn't need to store anything anywhere.\pause
+            \item It doesn't need to store anything anywhere.
         \end{itemize}
     \end{frame}
 
@@ -258,9 +259,9 @@
         \frametitle{Tool: kubectl\footnotemark}
         kubectl can:
         \begin{itemize}
-            \item Update components in our cluster.\pause
-            \item Inspect components in our cluster.\pause
-            \item Create components in our cluster, but we'll use another tool for that...
+            \item Update manifests in our cluster.\pause
+            \item Inspect manifests in our cluster.\pause
+            \item Create manifests in our cluster, but we'll use another tool for that...
         \end{itemize}
         \footnotetext[1]{\href{https://kubernetes.io/docs/tasks/tools/install-kubectl}{https://kubernetes.io/docs/tasks/tools/install-kubectl}}
     \end{frame}
@@ -268,8 +269,8 @@
     \begin{frame}
         \frametitle{Tool: helm\footnotemark}
         \begin{itemize}
-            \item Tool for packaging and deploying Kubernetes Applications.
-            \item We'll use helm (instead of kubectl) to create our Kubernetes components.
+            \item Tool for packaging and deploying Kubernetes manifests (Applications).\pause
+            \item Includes support for templating.
         \end{itemize}
         \footnotetext[1]{\href{https://helm.sh}{https://helm.sh}}
     \end{frame}
