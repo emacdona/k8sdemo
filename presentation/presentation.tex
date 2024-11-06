@@ -95,21 +95,21 @@
     \begin{frame}
         \frametitle{When can you benefit from horizontal scaling?}
         \begin{itemize}
-            \uncover<2->{\item{Your app consists only of stateless components.}}
+            \uncover<1->{\item{Your app consists only of stateless components.}}
             \begin{itemize}
-                \uncover<3->{\item{For example: An app that converts uploaded Word documents to PDF documents.}}
+                \uncover<2->{\item{For example: An app that converts uploaded Word documents to PDF documents.}}
             \end{itemize}
-            \uncover<4->{\item{Your app has stateless and stateful components, but the stateful components are not the bottleneck.}}
+            \uncover<3->{\item{Your app has stateless and stateful components, but the stateful components are not the bottleneck.}}
             \begin{itemize}
-                \uncover<5->{\item{Consider SETI@home\footnotemark -- They farmed out intensive computations to a network of PCs, each of which presumably sent back a result that was inserted into their RDBMS.}}
+                \uncover<4->{\item{Consider SETI@home\footnotemark -- They farmed out intensive computations to a network of PCs, each of which presumably sent back a result that was inserted into their RDBMS.}}
             \end{itemize}
-            \uncover<6->{\item{You can find a way to scale your stateful components enough that they are no longer the bottleneck.}}
+            \uncover<5->{\item{You can find a way to scale your stateful components enough that they are no longer the bottleneck.}}
             \begin{itemize}
-                \uncover<7->{\item{For example: An RDBMS in a read heavy application can scale read-only replicas horizontally and distribute reads (SELECTs) among them.}}
-                \uncover<8->{\item{Or in a write heavy application, perhaps the primary entity can be sharded and distributed among multiple RDBMS instances.}}
+                \uncover<6->{\item{For example: An RDBMS in a read heavy application can scale read-only replicas horizontally and distribute reads (SELECTs) among them.}}
+                \uncover<7->{\item{Or in a write heavy application, perhaps the primary entity can be sharded and distributed among multiple RDBMS instances.}}
             \end{itemize}
         \end{itemize}
-        \footnotetext[1]<5->{\href{https://en.wikipedia.org/wiki/SETI@home}{https://en.wikipedia.org/wiki/SETI@home}}
+        \footnotetext[1]<4->{\href{https://en.wikipedia.org/wiki/SETI@home}{https://en.wikipedia.org/wiki/SETI@home}}
     \end{frame}
 
     \begin{frame}
@@ -118,28 +118,22 @@
         \end{center}
     \end{frame}
 
-    \begin{frame}
-        \frametitle{Deploying An App: Build Your App}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-00-app.eps}
+    \begin{frame}<handout:0>
+        \only<1>{\frametitle{Deploying An App: Build Your App}}
+        \only<2>{\frametitle{Deploying An App: Package Your App as a Container}}
+        \only<3>{\frametitle{Deploying An App: Push The Container to a Repository}}
+        \only<4>{\frametitle{Deploying An App: Deploy Pods to a Kubernetes Cluster}}
+        \only<5>{\frametitle{Deploying An App: Pods Pull Your Container}}
+
+        \only<1>{\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-00-app.eps}}
+        \only<2>{\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-01-appContainerized.eps}}
+        \only<3>{\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-02-containerToRepo.eps}}
+        \only<4>{\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-03-emptyPods.eps}}
+        \only<5>{\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-04-podsWithContainers.eps}}
     \end{frame}
 
-    \begin{frame}
-        \frametitle{Deploying An App: Package Your App as a Container}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-01-appContainerized.eps}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Deploying An App: Push The Container to a Repository}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-02-containerToRepo.eps}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Deploying An App: Deploy Pods to a Kubernetes Cluster}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-03-emptyPods.eps}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Deploying An App: Pods Pull Your Container}
+    \begin{frame}<beamer:0>
+        \frametitle{Deploying An App}
         \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/deploy-04-podsWithContainers.eps}
     \end{frame}
 
@@ -153,37 +147,37 @@
         \frametitle{Tools}
         \begin{itemize}
             \uncover<1->{\item docker\footnotemark[1]}
-                \begin{itemize}
-                    \uncover<2->{\item How we package our applications and put them in a place where k8s can find them.}
-                \end{itemize}
-            \uncover<3->{\item minikube\footnotemark[4]}
-                \begin{itemize}
-                    \uncover<4->{\item Our very own k8s cluster on our laptop (development use only!).}
-                \end{itemize}
+            \begin{itemize}
+                \uncover<2->{\item How we package our applications and put them in a place where k8s can find them.}
+            \end{itemize}
+            \uncover<3->{\item minikube\footnotemark[2]}
+            \begin{itemize}
+                \uncover<4->{\item Our very own k8s cluster on our laptop (development use only!).}
+            \end{itemize}
             \uncover<5->{\item helm\footnotemark[3]}
-                \begin{itemize}
-                    \uncover<6->{\item How we package and rollout k8s manifests.}
-                \end{itemize}
-            \uncover<7->{\item kubectl\footnotemark[2]}
-                \begin{itemize}
-                    \uncover<8->{\item How we Create, Read, Update, and Delete k8s resources (when helm would be overkill).}
-                    \uncover<9->{\item Very thin wrapper around k8s API.}
-                \end{itemize}
+            \begin{itemize}
+                \uncover<6->{\item How we package and rollout k8s manifests.}
+            \end{itemize}
+            \uncover<7->{\item kubectl\footnotemark[4]}
+            \begin{itemize}
+                \uncover<8->{\item How we Create, Read, Update, and Delete k8s resources (when helm would be overkill).}
+                \uncover<9->{\item Very thin wrapper around k8s API.}
+            \end{itemize}
         \end{itemize}
         \footnotetext[1]<1->{\href{https://www.docker.com/get-started}{https://www.docker.com/get-started}}
-        \footnotetext[3]<2->{\href{https://kubernetes.io/docs/tasks/tools/install-minikube}{https://kubernetes.io/docs/tasks/tools/install-minikube}}
-        \footnotetext[5]<3->{\href{https://helm.sh}{https://helm.sh}}
-        \footnotetext[7]<4->{\href{https://kubernetes.io/docs/tasks/tools/install-kubectl}{https://kubernetes.io/docs/tasks/tools/install-kubectl}}
+        \footnotetext[2]<3->{\href{https://kubernetes.io/docs/tasks/tools/install-minikube}{https://kubernetes.io/docs/tasks/tools/install-minikube}}
+        \footnotetext[3]<5->{\href{https://helm.sh}{https://helm.sh}}
+        \footnotetext[4]<7->{\href{https://kubernetes.io/docs/tasks/tools/install-kubectl}{https://kubernetes.io/docs/tasks/tools/install-kubectl}}
     \end{frame}
 
     \begin{frame}
         \frametitle{Kubernetes Nodes}
         \begin{itemize}
-            \uncover<2->{\item The (virtual) machines that make up the Kubernetes cluster.}
-            \uncover<3->{\item Kubernetes schedules Pods to run on these Nodes.}
-            \uncover<4->{\item Managed Kubernetes services\footnotemark[1] can change the number of Nodes to increase/decrease compute resources.}
+            \uncover<1->{\item The (virtual) machines that make up the Kubernetes cluster.}
+            \uncover<2->{\item Kubernetes schedules Pods to run on these Nodes.}
+            \uncover<3->{\item Managed Kubernetes services\footnotemark[1] can change the number of Nodes to increase/decrease compute resources.}
         \end{itemize}
-        \footnotetext[1]<4->{\href{https://aws.amazon.com/eks/}{EKS}, \href{https://azure.microsoft.com/en-us/products/kubernetes-service}{AKS}, \href{https://cloud.google.com/kubernetes-engine}{GKE}}
+        \footnotetext[1]<3->{\href{https://aws.amazon.com/eks/}{EKS}, \href{https://azure.microsoft.com/en-us/products/kubernetes-service}{AKS}, \href{https://cloud.google.com/kubernetes-engine}{GKE}}
     \end{frame}
 
 % https://www.patrickbaylis.com/posts/2018-10-11-beamer-resizing/
@@ -209,7 +203,7 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Stateless Pod Controllers (ReplicaSets)}
+        \frametitle{ReplicaSets (Stateless Pod Controllers)}
         \begin{itemize}
             \item Pods come and go.\pause
             \begin{itemize}
@@ -225,41 +219,25 @@
         \end{itemize}
     \end{frame}
 
-    \begin{frame}
-        \frametitle{The Sample App}
-        I wrote an Application that does nothing other than suggest a random Subreddit.\pause
-        \begin{itemize}
-            \item Stateless.\pause
-            \item Selects at random from a list of 280 Subreddits.\pause
-            \item The list never changes.\pause
-            \item It doesn't need to store anything anywhere.
-        \end{itemize}
-    \end{frame}
+%    \begin{frame}
+%        \frametitle{Controllers}
+%        \begin{itemize}
+%            \item Don't create Pods directly.
+%            \item Instead, create a Controller that manages the Pods for you.
+%        \end{itemize}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \frametitle{Controllers: ReplicaSets}
+%        \begin{itemize}
+%            \item State how many Pods you want.\pause
+%            \item Pods are treated as if they were stateless.\pause
+%            \item From Application's point of view, Pods in a ReplicaSet are indistinguishable.
+%        \end{itemize}
+%    \end{frame}
 
     \begin{frame}
-        \frametitle{Stateless Application Pods}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/02-statelessAppPods.eps}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Controllers}
-        \begin{itemize}
-            \item Don't create Pods directly.
-            \item Instead, create a Controller that manages the Pods for you.
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Controllers: ReplicaSets}
-        \begin{itemize}
-            \item State how many Pods you want.\pause
-            \item Pods are treated as if they were stateless.\pause
-            \item From Application's point of view, Pods in a ReplicaSet are indistinguishable.
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Controllers: Deployments}
+        \frametitle{Deployment (Controller)}
         \begin{itemize}
             \item ReplicaSets with more features.\pause
             \item I'm not going to use those features.\pause
@@ -268,25 +246,22 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Deployment}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/04-deployment.eps}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{StatefulSet: Persistent Storage}
-        \begin{itemize}
-            \item StatefulSet Pods can have PersistentVolumeClaims (PVCs).\pause
-            \item PVCs are used to request PersistentVolumes.\pause
-            \item PersistentVolumes are Volumes that survive Pods being moved or replaced.
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Load Balancers}
+        \frametitle{Serivce (Load Balancer)}
         \begin{itemize}
             \item Load Balancers have an internal cluster IP address.\pause
             \item They can also have an external IP address.\pause
             \item They distribute requests sent to either IP address to all Pods targeted by their ``selector".
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Sample App}
+        I wrote an Application that does nothing other than suggest a random Subreddit.\pause
+        \begin{itemize}
+            \item Stateless.\pause
+            \item Selects at random from a list of 280 Subreddits.\pause
+            \item The list never changes.\pause
+            \item It doesn't need to store anything anywhere.
         \end{itemize}
     \end{frame}
 

@@ -3,4 +3,7 @@ set -eo pipefail
 
 minikube delete
 
-minikube start
+# sudo brew services start socket_vmnet
+#minikube start --network=socket_vmnet
+
+minikube start --driver=docker
