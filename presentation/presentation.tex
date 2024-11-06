@@ -150,21 +150,40 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Kubernetes Nodes}
+        \frametitle{Tools}
         \begin{itemize}
-            \item The (virtual) machines that make up the Kubernetes cluster.\pause
-            \item Kubernetes schedules Pods to run on these Nodes.\pause
-            \item Kubernetes can change the number of Nodes to increase/decrease compute resources.
+            \uncover<1->{\item docker\footnotemark[1]}
+                \begin{itemize}
+                    \uncover<2->{\item How we package our applications and put them in a place where k8s can find them.}
+                \end{itemize}
+            \uncover<3->{\item minikube\footnotemark[4]}
+                \begin{itemize}
+                    \uncover<4->{\item Our very own k8s cluster on our laptop (development use only!).}
+                \end{itemize}
+            \uncover<5->{\item helm\footnotemark[3]}
+                \begin{itemize}
+                    \uncover<6->{\item How we package and rollout k8s manifests.}
+                \end{itemize}
+            \uncover<7->{\item kubectl\footnotemark[2]}
+                \begin{itemize}
+                    \uncover<8->{\item How we Create, Read, Update, and Delete k8s resources (when helm would be overkill).}
+                    \uncover<9->{\item Very thin wrapper around k8s API.}
+                \end{itemize}
         \end{itemize}
+        \footnotetext[1]<1->{\href{https://www.docker.com/get-started}{https://www.docker.com/get-started}}
+        \footnotetext[3]<2->{\href{https://kubernetes.io/docs/tasks/tools/install-minikube}{https://kubernetes.io/docs/tasks/tools/install-minikube}}
+        \footnotetext[5]<3->{\href{https://helm.sh}{https://helm.sh}}
+        \footnotetext[7]<4->{\href{https://kubernetes.io/docs/tasks/tools/install-kubectl}{https://kubernetes.io/docs/tasks/tools/install-kubectl}}
     \end{frame}
 
     \begin{frame}
-        \frametitle{Tool: minikube\footnotemark}
+        \frametitle{Kubernetes Nodes}
         \begin{itemize}
-            \item Easiest way to install a (single Node) Kubernetes cluster on your machine.
-            \item For development purposes only!
+            \uncover<2->{\item The (virtual) machines that make up the Kubernetes cluster.}
+            \uncover<3->{\item Kubernetes schedules Pods to run on these Nodes.}
+            \uncover<4->{\item Managed Kubernetes services\footnotemark[1] can change the number of Nodes to increase/decrease compute resources.}
         \end{itemize}
-        \footnotetext[1]{\href{https://kubernetes.io/docs/tasks/tools/install-minikube}{https://kubernetes.io/docs/tasks/tools/install-minikube}}
+        \footnotetext[1]<4->{\href{https://aws.amazon.com/eks/}{EKS}, \href{https://azure.microsoft.com/en-us/products/kubernetes-service}{AKS}, \href{https://cloud.google.com/kubernetes-engine}{GKE}}
     \end{frame}
 
 % https://www.patrickbaylis.com/posts/2018-10-11-beamer-resizing/
@@ -190,6 +209,23 @@
     \end{frame}
 
     \begin{frame}
+        \frametitle{Stateless Pod Controllers (ReplicaSets)}
+        \begin{itemize}
+            \item Pods come and go.\pause
+            \begin{itemize}
+                \item Replaced if unresponsive.\pause
+                \item Can be deleted on one Node and added on another (moved).\pause
+                \item \textbf{You cannot prevent either of these things from happening.}\pause
+            \end{itemize}
+            \item With ReplicaSets\pause
+            \begin{itemize}
+                \item Volumes don't follow Pods.\pause
+                \item Hostnames don't follow Pods.
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
         \frametitle{The Sample App}
         I wrote an Application that does nothing other than suggest a random Subreddit.\pause
         \begin{itemize}
@@ -198,30 +234,6 @@
             \item The list never changes.\pause
             \item It doesn't need to store anything anywhere.
         \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Pods and Stateless Applications}
-        \begin{itemize}
-            \item Pods come and go.\pause
-            \begin{itemize}
-                \item Replaced if unresponsive.\pause
-                \item Can be deleted on one Node and added on another (moved).\pause
-                \item \textbf{You cannot prevent either of these things from happening.}\pause
-            \end{itemize}
-            \item By default, Volumes don't follow Pods.\pause
-            \item By default, hostnames don't follow Pods.\pause
-            \item Not a big deal for stateless Applications.\pause
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Tool: docker\footnotemark}
-        \begin{itemize}
-            \item Our Applications need to be packaged as docker Containers.
-            \item We need publish these Containers to minikube's docker server.
-        \end{itemize}
-        \footnotetext[1]{\href{https://www.docker.com/get-started}{https://www.docker.com/get-started}}
     \end{frame}
 
     \begin{frame}
@@ -253,26 +265,6 @@
             \item I'm not going to use those features.\pause
             \item But I use Deployments because helm produces them for skeleton helm projects.
         \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Tool: kubectl\footnotemark}
-        kubectl can:
-        \begin{itemize}
-            \item Update manifests in our cluster.\pause
-            \item Inspect manifests in our cluster.\pause
-            \item Create manifests in our cluster, but we'll use another tool for that...
-        \end{itemize}
-        \footnotetext[1]{\href{https://kubernetes.io/docs/tasks/tools/install-kubectl}{https://kubernetes.io/docs/tasks/tools/install-kubectl}}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Tool: helm\footnotemark}
-        \begin{itemize}
-            \item Tool for packaging and deploying Kubernetes manifests (Applications).\pause
-            \item Includes support for templating.
-        \end{itemize}
-        \footnotetext[1]{\href{https://helm.sh}{https://helm.sh}}
     \end{frame}
 
     \begin{frame}
