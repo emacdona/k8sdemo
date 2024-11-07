@@ -77,7 +77,7 @@
         \frametitle{How do you use it?}
         \begin{itemize}
             \item{Package your Application components as Containers.}\pause
-            \item{Run the Containers on Kubernetes Pods.}\pause
+            \item{Run the Containers in Kubernetes Pods.}\pause
             \item{Let Kubernetes manage the Pods for you!}
         \end{itemize}
     \end{frame}
@@ -86,10 +86,18 @@
         \frametitle{Why go through the hassle? (It can be a hassle)}
         Kubernetes can manage resources for you by:\pause
         \begin{itemize}
-            \item{Changing the number of running Pods to meet traffic demands.}\pause
-            \item{Adjusting compute resources to meet compute demands.}\pause
-            \item{Replacing unresponsive Pods with new ones.}
+            \item{Doing what you say: Ask for 100 pods, it gives you 100 pods -- and ensures you always have 100.}\pause
+            \item{Horizontal Autoscaling: Too much traffic? It scales up.}\pause
         \end{itemize}
+        Once up and running, Kubernetes can ease some operational burdens:\pause
+        \begin{itemize}
+            \item{Can assign resource quotas at a namespace level.}\pause
+            \item{Can grant access to individuals/groups at a namespace level.}\pause
+            \item{Can manage ingress.}\pause
+            \item{I don't know... find an Ops person and ask them ;-)}\pause
+        \end{itemize}
+        I just know that the Ops team has put all of their guard rails in place.
+        I'm free to create services and roll them out.
     \end{frame}
 
     \begin{frame}
@@ -198,13 +206,13 @@
             \item A Pod is a group of one or more Containers that work closely together on a specific task.\pause
             \item Pods manage Volumes for their Containers.\pause
             \item Pods specify health check endpoints for their Containers.\pause
-            \item Kubernetes software is deployed as Pods on the cluster!
         \end{itemize}
     \end{frame}
 
     \begin{frame}
         \frametitle{ReplicaSets (Stateless)}
         \begin{itemize}
+            \item ReplicaSets manage a set of Pods.\pause
             \item Pods come and go.\pause
             \begin{itemize}
                 \item Replaced if unresponsive.\pause
@@ -214,7 +222,7 @@
             \item With ReplicaSets\pause
             \begin{itemize}
                 \item Volumes don't follow Pods.\pause
-                \item Hostnames don't follow Pods.
+                \item Hostnames don't follow Pods.\pause
             \end{itemize}
         \end{itemize}
     \end{frame}
@@ -222,9 +230,8 @@
     \begin{frame}
         \frametitle{Deployments}
         \begin{itemize}
-            \item ReplicaSets with more features.\pause
-            \item I'm not going to use those features.\pause
-            \item But I use Deployments because helm produces them for skeleton helm projects.
+            \item ReplicaSets with more features. For example: rollout strategies (canary, rolling update).\pause
+            \item I just used one because helm produces them for skeleton helm projects.
         \end{itemize}
     \end{frame}
 
@@ -306,6 +313,7 @@
             \item Spring Boot: \href{https://spring.io/projects/spring-boot}{https://spring.io/projects/spring-boot}
             \item Gradle: \href{https://gradle.org}{https://gradle.org}
             \item Dia: \href{http://dia-installer.de}{http://dia-installer.de}
+            \item k9s: \href{https://k9scli.io/}{https://k9scli.io/}
         \end{itemize}
         \smallskip
         Where I got my Subreddit data
@@ -342,27 +350,11 @@
 
     \begin{frame}
         \frametitle{``It Worked on My Machine" Demo Remix}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/screenshots/00-pods}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{``It Worked on My Machine" Demo Remix}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/screenshots/01-deployment}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{``It Worked on My Machine" Demo Remix}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/screenshots/02-scaleUp}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{``It Worked on My Machine" Demo Remix}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/screenshots/03-converging}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{``It Worked on My Machine" Demo Remix}
-        \includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/screenshots/04-deploymentManifest}
+        \only<1|handout:1>{\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/screenshots/00-pods}}
+        \only<2|handout:2>{\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/screenshots/01-deployment}}
+        \only<3|handout:3>{\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/screenshots/02-scaleUp}}
+        \only<4|handout:4>{\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/screenshots/03-converging}}
+        \only<5|handout:5>{\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{graphics/screenshots/04-deploymentManifest}}
     \end{frame}
 
 \end{document}
